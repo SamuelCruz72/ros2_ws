@@ -118,6 +118,11 @@ class TurtleController(Node):
                     self.teleport_to(4.5, 7.0, 3*math.pi/4)
                     time.sleep(0.3) 
                     self.draw_s()  
+                elif key == 'a':  
+                    self.get_logger().info("Dibujando la letra 'a'")
+                    self.teleport_to(4.5, 7.0, math.pi/3)
+                    time.sleep(0.3) 
+                    self.draw_a()  
                 elif key == 'c':  
                     self.get_logger().info("Dibujando la letra 'c'")
                     self.teleport_to(6.5, 7.0, 5*math.pi/6)
@@ -155,6 +160,17 @@ class TurtleController(Node):
         self.current_twist.linear.x = 7.0
         mid_time = time.time()
         while time.time() - mid_time < 5*math.pi/(14*4):
+            self.publisher_.publish(self.current_twist)
+            time.sleep(0.05)
+        self.current_twist.linear.x = 0.0
+        self.current_twist.angular.z = 0.0
+        self.publisher_.publish(self.current_twist)
+
+    def draw_a(self):
+        self.current_twist.linear.x = 7.0
+        self.current_twist.angular.z = 7.0
+        start_time = time.time()
+        while time.time() - start_time < 4*math.pi/(7*3):
             self.publisher_.publish(self.current_twist)
             time.sleep(0.05)
         self.current_twist.linear.x = 0.0
