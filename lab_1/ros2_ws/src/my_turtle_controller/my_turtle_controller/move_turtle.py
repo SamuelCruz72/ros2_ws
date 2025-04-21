@@ -17,8 +17,6 @@ class TurtleController(Node):
         self.publisher_ = self.create_publisher(Twist, '/turtle1/cmd_vel', 10)
         self.timer = self.create_timer(0.05, self.move_turtle)
         self.last_key_time = time.time()
-        self.current_pose = None
-        self.pose_sub = self.create_subscription(Pose, '/turtle1/pose', self.pose_callback, 10)
 
         # Clientes de Servicio
         self.current_twist = Twist()
