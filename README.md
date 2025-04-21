@@ -11,6 +11,8 @@
 <p align="center">  
 
 <h3>Robótica 2025-I</h3>
+
+<div align="justify"> 
     
 # Laboratorio Robótica
 En este repositorio se incluyen todos los archivos fuente y la documentación relacionada con el desarrollo de cada uno de los laboratorios de la asignatura Robótica 2025- I de la Universidad Nacional de Colombia:
