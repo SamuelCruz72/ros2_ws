@@ -38,7 +38,7 @@ class TurtleController(Node):
             self.current_twist.angular.z = 0.0
         self.publisher_.publish(self.current_twist)
 
-    # Fija las condiciones del lapiz
+    # Fija las condiciones del lápiz
     def set_pen(self, r=255, g=255, b=255, width=3, off=False):
         if not self.pen_client.wait_for_service(timeout_sec=1.0):
             self.get_logger().error('Servicio de lápiz no disponible.')
@@ -52,7 +52,7 @@ class TurtleController(Node):
         future = self.pen_client.call_async(request)
         future.add_done_callback(self.pen_response_callback)
 
-    # Indica el estado de la llamada al lapiz
+    # Indica el estado de la llamada al lápiz
     def pen_response_callback(self, future):
         try:
             future.result()
@@ -60,7 +60,7 @@ class TurtleController(Node):
         except Exception as e:
             self.get_logger().error(f'Error al actualizar el lápiz: {e}')
 
-    # Transporta la tortuga a una posiciòn y pose determinada
+    # Transporta la tortuga a una posición y pose determinada
     def teleport_to(self, x, y, theta):
         self.last_position_x = x
         self.last_position_y = y
@@ -162,7 +162,7 @@ class TurtleController(Node):
         self.current_twist.angular.z = 0.0
         self.publisher_.publish(self.current_twist)
         time.sleep(0.2) 
-        # Corrige la orientacion de la tortuga 
+        # Corrige la orientación de la tortuga 
         self.teleport_to(3.65, 6.15, 0.0)
         time.sleep(0.2) 
         # Dibuja el semicírculo inferior de la S
@@ -178,7 +178,7 @@ class TurtleController(Node):
         self.publisher_.publish(self.current_twist)
 
     def draw_a(self):
-        # Dibuja la linea ascendente de la A
+        # Dibuja la línea ascendente de la A
         self.current_twist.linear.x = 7.0
         self.current_twist.angular.z = 0.0
         rise_time = time.time()
@@ -192,7 +192,7 @@ class TurtleController(Node):
         while time.time() - mid_time < 2*math.pi/(3*7):
             self.publisher_.publish(self.current_twist)
             time.sleep(0.05)
-        # Dibuja la linea descendente de la A
+        # Dibuja la línea descendente de la A
         self.current_twist.linear.x = 7.0
         self.current_twist.angular.z = 0.0
         fall_time = time.time()
@@ -204,10 +204,10 @@ class TurtleController(Node):
         self.current_twist.angular.z = 0.0
         self.publisher_.publish(self.current_twist)
         time.sleep(0.2) 
-        # Transporta la tortuga para dibujar la linea horizontal de la A
+        # Transporta la tortuga para dibujar la línea horizontal de la A
         self.teleport_to(5.0, 6.0, 0.0)
         time.sleep(0.2) 
-        # Dibuja la linea horizontal de la A
+        # Dibuja la línea horizontal de la A
         self.current_twist.linear.x = 7.0
         self.current_twist.angular.z = 0.0
         last_time = time.time()
@@ -220,7 +220,7 @@ class TurtleController(Node):
         self.publisher_.publish(self.current_twist)
 
     def draw_c(self):
-        # Dibuja el segmento de circulo de la C
+        # Dibuja el segmento de círculo de la C
         self.current_twist.linear.x = 7.0
         self.current_twist.angular.z = 7.0
         start_time = time.time()
