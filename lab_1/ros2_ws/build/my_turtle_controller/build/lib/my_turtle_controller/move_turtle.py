@@ -115,7 +115,7 @@ class TurtleController(Node):
                             self.current_twist.angular.z = 2.0
                 elif key == 's':  
                     self.get_logger().info("Dibujando la letra 's'")
-                    self.teleport_to(3.5, 7.0, 3*math.pi/4)
+                    self.teleport_to(4.0, 7.0, 3*math.pi/4)
                     time.sleep(0.3) 
                     self.draw_s()  
                 elif key == 'a':  
@@ -131,6 +131,8 @@ class TurtleController(Node):
                 elif key == 'r':
                     self.get_logger().info("Reiniciando: limpiando pantalla y reubicando tortuga")
                     self.clear_background()
+                    self.current_twist.linear.x = 0.0
+                    self.current_twist.angular.z = 0.0
                     self.teleport_to(5.5, 5.5, 0.0)
                 elif key == 'q':
                     self.get_logger().info("Saliendo")
@@ -144,7 +146,7 @@ class TurtleController(Node):
         self.current_twist.linear.x = 7.0
         self.current_twist.angular.z = 14.0
         start_time = time.time()
-        while time.time() - start_time < 5*math.pi/(14*4):
+        while time.time() - start_time < 5*math.pi/(14*4)-0.05:
             self.publisher_.publish(self.current_twist)
             time.sleep(0.05)
         # Parada
@@ -153,7 +155,7 @@ class TurtleController(Node):
         self.publisher_.publish(self.current_twist)
         time.sleep(0.2) 
         # Correccion de Orientacion
-        self.teleport_to(3.15, 6.15, 0.0)
+        self.teleport_to(3.65, 6.15, 0.0)
         time.sleep(0.2) 
         # Segundo semicírculo (inferior)
         self.current_twist.angular.z = -14.0
@@ -182,7 +184,7 @@ class TurtleController(Node):
         self.current_twist.linear.x = 7.0
         self.current_twist.angular.z = 0.0
         fall_time = time.time()
-        while time.time() - fall_time < 2.16/7:
+        while time.time() - fall_time < 2.11/7:
             self.publisher_.publish(self.current_twist)
             time.sleep(0.05)
         self.current_twist.linear.x = 0.0
@@ -195,7 +197,7 @@ class TurtleController(Node):
         self.current_twist.linear.x = 7.0
         self.current_twist.angular.z = 0.0
         last_time = time.time()
-        while time.time() - last_time < 1.14/7:
+        while time.time() - last_time < 0.97/7:
             self.publisher_.publish(self.current_twist)
             time.sleep(0.05)
         self.current_twist.linear.x = 0.0

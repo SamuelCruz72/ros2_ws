@@ -146,7 +146,7 @@ class TurtleController(Node):
         self.current_twist.linear.x = 7.0
         self.current_twist.angular.z = 14.0
         start_time = time.time()
-        while time.time() - start_time < 5*math.pi/(14*4):
+        while time.time() - start_time < 5*math.pi/(14*4)-0.05:
             self.publisher_.publish(self.current_twist)
             time.sleep(0.05)
         # Parada
@@ -184,7 +184,7 @@ class TurtleController(Node):
         self.current_twist.linear.x = 7.0
         self.current_twist.angular.z = 0.0
         fall_time = time.time()
-        while time.time() - fall_time < 2.16/7:
+        while time.time() - fall_time < 2.11/7:
             self.publisher_.publish(self.current_twist)
             time.sleep(0.05)
         self.current_twist.linear.x = 0.0
@@ -197,7 +197,7 @@ class TurtleController(Node):
         self.current_twist.linear.x = 7.0
         self.current_twist.angular.z = 0.0
         last_time = time.time()
-        while time.time() - last_time < 1.14/7:
+        while time.time() - last_time < 0.97/7:
             self.publisher_.publish(self.current_twist)
             time.sleep(0.05)
         self.current_twist.linear.x = 0.0
