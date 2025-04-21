@@ -4,7 +4,6 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from turtlesim.srv import TeleportAbsolute, SetPen
 from std_srvs.srv import Empty 
-from turtlesim.msg import Pose
 
 import threading
 import sys
@@ -18,8 +17,6 @@ class TurtleController(Node):
         self.publisher_ = self.create_publisher(Twist, '/turtle1/cmd_vel', 10)
         self.timer = self.create_timer(0.05, self.move_turtle)
         self.last_key_time = time.time()
-        self.current_pose = None
-        self.pose_sub = self.create_subscription(Pose, '/turtle1/pose', self.pose_callback, 10)
 
         # Clientes de Servicio
         self.current_twist = Twist()
@@ -38,20 +35,6 @@ class TurtleController(Node):
             self.current_twist.linear.x = 0.0
             self.current_twist.angular.z = 0.0
         self.publisher_.publish(self.current_twist)
-
-    def pose_callback(self, msg):
-        self.current_pose = msg
-
-    def set_orientation(self, theta):
-        if not self.teleport_client.wait_for_service(timeout_sec=1.0):
-            self.get_logger().error('Servicio de teletransporte no disponible.')
-            return
-        request = TeleportAbsolute.Request()
-        request.x = self.last_position_x
-        request.y = self.last_position_y
-        request.theta = theta
-        future = self.teleport_client.call_async(request)
-        rclpy.spin_until_future_complete(self, future)
 
     def set_pen(self, r=255, g=255, b=255, width=3, off=False):
         if not self.pen_client.wait_for_service(timeout_sec=1.0):
@@ -165,7 +148,7 @@ class TurtleController(Node):
         self.publisher_.publish(self.current_twist)
         time.sleep(0.2) 
         # Correccion de Orientacion
-        self.set_orientation(0.0)
+        self.teleport_to(4.15, 6.15, 0.0)
         time.sleep(0.2) 
         # Segundo semicírculo (inferior)
         self.current_twist.angular.z = -14.0

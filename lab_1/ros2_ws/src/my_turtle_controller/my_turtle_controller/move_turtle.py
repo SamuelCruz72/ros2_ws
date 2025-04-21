@@ -148,7 +148,7 @@ class TurtleController(Node):
         self.publisher_.publish(self.current_twist)
         time.sleep(0.2) 
         # Correccion de Orientacion
-        self.teleport_to(5.5, 5.5, 0.0)
+        self.teleport_to(4.15, 6.15, 0.0)
         time.sleep(0.2) 
         # Segundo semicírculo (inferior)
         self.current_twist.angular.z = -14.0
