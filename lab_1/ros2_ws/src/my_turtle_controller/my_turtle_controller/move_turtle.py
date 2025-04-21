@@ -120,12 +120,12 @@ class TurtleController(Node):
                     self.draw_s()  
                 elif key == 'a':  
                     self.get_logger().info("Dibujando la letra 'a'")
-                    self.teleport_to(5.5, 5.13, math.pi/3)
+                    self.teleport_to(4.5, 5.13, math.pi/3)
                     time.sleep(0.3) 
                     self.draw_a()  
                 elif key == 'c':  
                     self.get_logger().info("Dibujando la letra 'c'")
-                    self.teleport_to(7.5, 7.0, 5*math.pi/6)
+                    self.teleport_to(8.5, 7.0, 5*math.pi/6)
                     time.sleep(0.3)
                     self.draw_c()
                 elif key == 'r':
@@ -190,18 +190,18 @@ class TurtleController(Node):
         self.publisher_.publish(self.current_twist)
         time.sleep(0.2) 
         # Correccion de Orientacion
-        self.teleport_to(6.0, 6.0, 0.0)
+        self.teleport_to(5.0, 6.0, 0.0)
         time.sleep(0.2) 
         self.current_twist.linear.x = 7.0
         self.current_twist.angular.z = 0.0
         last_time = time.time()
-        while time.time() - fall_time < 1.14/7:
+        while time.time() - last_time < 1.14/7:
             self.publisher_.publish(self.current_twist)
             time.sleep(0.05)
         self.current_twist.linear.x = 0.0
         self.current_twist.angular.z = 0.0
         self.publisher_.publish(self.current_twist)
-        
+
     def draw_c(self):
         self.current_twist.linear.x = 7.0
         self.current_twist.angular.z = 7.0
