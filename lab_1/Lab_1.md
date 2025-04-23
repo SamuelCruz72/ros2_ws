@@ -37,12 +37,21 @@ A continuación se explica con mayor detalle cada una de las funciones implement
 <p align="center">
    <img src="Figuras/Traj_S.png" alt="S generada con Matlab" width="400"><br> 
 
+<p align="center">
+   <img src="Figuras/SRos2.png" alt="S generada con ROS2" width="500"><br> 
+
 ## Generación de la trayectoria de la A
 
 <p align="center">
    <img src="Figuras/Traj_A.png" alt="A generada con Matlab" width="400"><br> 
 
+<p align="center">
+   <img src="Figuras/ARos2.png" alt="A generada con ROS2" width="500"><br> 
+
 ## Generación de la trayectoria de la C
 
 <p align="center">
-   <img src="Figuras/Traj_C.png" alt="S generada con Matlab" width="400"><br> 
+   <img src="Figuras/Traj_C.png" alt="C generada con Matlab" width="500"><br> 
+
+<p align="center">
+   <img src="Figuras/CRos2.png" alt="C generada con ROS2" width="500"><br> 
