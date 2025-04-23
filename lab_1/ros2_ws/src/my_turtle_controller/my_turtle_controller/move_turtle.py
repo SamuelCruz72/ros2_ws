@@ -33,7 +33,7 @@ class TurtleController(Node):
     
     # Recibe indicaciones de movimiento de la tortuga
     def move_turtle(self):
-        if time.time() - self.last_key_time > 5:
+        if time.time() - self.last_key_time > 2:
             self.current_twist.linear.x = 0.0
             self.current_twist.angular.z = 0.0
         self.publisher_.publish(self.current_twist)
