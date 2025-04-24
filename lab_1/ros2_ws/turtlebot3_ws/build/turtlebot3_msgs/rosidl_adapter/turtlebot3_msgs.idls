@@ -1,0 +1,6 @@
+/home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/SensorState.idl
+/home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/Sound.idl
+/home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:msg/VersionInfo.idl
+/home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:srv/Sound.idl
+/home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:srv/Dqn.idl
+/home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/build/turtlebot3_msgs/rosidl_adapter/turtlebot3_msgs:action/Patrol.idl
