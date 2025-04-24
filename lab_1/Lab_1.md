@@ -52,6 +52,11 @@ Una última funcionalidad que es importante mencionar, es la implementación de 
 
 ### Trayectoria de la S
 
+La "S", se puede considerar como dos segmentos de circunferencia, el primero dibuja la sección superior de la "S" y engloba la curva antihoraria comprendida entre los 45$^\circ$ y los 270$^\circ$ descritos por el vector que la traza con respecto a su centro, mientras que el segundo segmento dibuja la sección inferior y engloba la curva comprendida comprendida entre los 270$^\circ$ y los 495$^\circ$ de una curva trazada en sentido horario con un vector alineado con su centro, si consideramos que el centro de la primera curva está desplazada 0.5 unidades verticales con respecto al origen, mientras que el de la segunda está desplazado -0.5 unidades verticales, se puede escribir la siguiente función parámetrica que representa la curva que mejor se adapta a lo que queremos:
+
+$$r(t) = \begin{cases} \langle 0.5cos(t),0.5sin(t)+0.5\rangle, \pi/4 \leq t \leq 3\pi/2 \\ 
+\langle 0.5cos(t),-0.5sin(t)-0.5 \rangle, 3\pi/2 \leq t \leq 11\pi/4 \end{cases} $$
+
 La función hecha en Matlab para generar la trayectoría es la siguiente:
 
 ```matlab
@@ -96,9 +101,9 @@ title("Trayectoria de la A")
 
 ### Trayectoria de la C
 
-La C, se puede considerar como un segmento de circunferencia que engloba toda la curva comprendida entre los 60$^\circ$ y los 300$^\circ$ descritos por el vector que la traza con respecto a su centro, si consideramos que el centro de la misma es el origen, se puede escribir la siguiente función parámetrica que representa la curva que mejor se adapta a lo que queremos:
+La C, se puede considerar como un segmento de circunferencia que engloba toda la curva antihoraria comprendida entre los 60$^\circ$ y los 300$^\circ$ descritos por el vector que la traza con respecto a su centro, si consideramos que el centro de la misma es el origen, se puede escribir la siguiente función parámetrica que representa la curva que mejor se adapta a lo que queremos:
 
-$$r(t) = <cos(t),sin(t)>, \pi/3 \geq t \leg 5\pi/3$$
+$$r(t) = \langle cos(t),sin(t)\rangle, \pi/3 \leq t \leq 5\pi/3$$
 
 La función hecha en Matlab para generar la trayectoría es la siguiente:
 
