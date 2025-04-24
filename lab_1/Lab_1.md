@@ -20,7 +20,7 @@ A partir de este paquete, se creó un archivo ``move_turtle.py`` en la carpeta `
 Una vez se completaron todas las funciones del archivo ``move_turtle.py``, se guardaron los cambios y se retornó a la raíz del workspace para compilar el código y ejecutarlo:
 
 ```bash
-cd ~/ros2_ws
+cd ~/Laboratorio_Robotica/lab_1/ros2_ws
 colcon build
 source install/setup.bash
 ros2 run my_turtle_controller move_turtle
@@ -30,9 +30,11 @@ A continuación se explica con mayor detalle cada una de las funciones implement
 
 ## Control del nodo Turtlesim con flechas
 
+Para el control del nodo con las flechas del teclado, primero se implementó la función
 
+## Generación de Trayectorias
 
-## Generación de la trayectoria de la S
+### Trayectoria de la S
 
 <p align="center">
    <img src="Figuras/Traj_S.png" alt="S generada con Matlab" width="400"><br> 
@@ -40,7 +42,7 @@ A continuación se explica con mayor detalle cada una de las funciones implement
 <p align="center">
    <img src="Figuras/SRos2.png" alt="S generada con ROS2" width="500"><br> 
 
-## Generación de la trayectoria de la A
+### Trayectoria de la A
 
 <p align="center">
    <img src="Figuras/Traj_A.png" alt="A generada con Matlab" width="400"><br> 
@@ -48,7 +50,7 @@ A continuación se explica con mayor detalle cada una de las funciones implement
 <p align="center">
    <img src="Figuras/ARos2.png" alt="A generada con ROS2" width="500"><br> 
 
-## Generación de la trayectoria de la C
+### Trayectoria de la C
 
 <p align="center">
    <img src="Figuras/Traj_C.png" alt="C generada con Matlab" width="500"><br> 
