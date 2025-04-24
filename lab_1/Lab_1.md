@@ -2,8 +2,8 @@
 El objetivo primordial de esta práctica de laboratorio es familiarizarse con el entorno básico de ROS2, en particular con el nodo Turtlesim; para ello, este nodo se conectó con Python, en primera instancia mediante la creación de un workspace de ROS2 a través de los siguientes comandos en la terminal de Linux:
 
 ```bash
-mkdir -p ~/ros2_ws/src
-cd ~/ros2_ws
+mkdir -p ~/Laboratorio_Robotica/lab_1/ros2_ws/src
+cd ..
 colcon build
 source /opt/ros/humble/setup.bash
 ```
@@ -30,7 +30,7 @@ A continuación se explica con mayor detalle cada una de las funciones implement
 
 ## Control del nodo Turtlesim con flechas
 
-Para el control del nodo con las flechas del teclado, primero se implementó la función
+Para el control del nodo con las flechas del teclado, primero se implementó un hilo adicional que se encargara unicamente de escuchar el teclado, luego se creó la función ``listen_keyboard``
 
 ## Generación de Trayectorias
 
