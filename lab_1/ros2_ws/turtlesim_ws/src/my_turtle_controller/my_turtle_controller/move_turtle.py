@@ -101,9 +101,11 @@ class TurtleController(Node):
             while True:
                 key = sys.stdin.read(1)
                 self.last_key_time = time.time()
-                if key == '\x1b':  # Comienza secuencia de flecha 
+                # Detecta que se presiona un comando especial
+                if key == '\x1b': 
                     key2 = sys.stdin.read(1)
                     key3 = sys.stdin.read(1)
+                    # Detecta que el comando especial es una flecha
                     if key2 == '[':
                         if key3 == 'A':  # Flecha arriba
                             self.get_logger().info("Tortuga avanzando")
