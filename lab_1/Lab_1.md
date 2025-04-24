@@ -30,7 +30,7 @@ A continuación se explica con mayor detalle cada una de las funciones implement
 
 ## Control del nodo Turtlesim con flechas
 
-Para el control del nodo Turtlesim con las flechas del teclado, primero se implementó un hilo adicional que se encarga unicamente de escuchar el teclado, luego se creó la función ``listen_keyboard`` que detecta la tecla que se presionó, esta información se guarda primordialmente en la variable ```key`` y posteriormente se usa en una secuencia de condicionales para modificar el movimiento de la tortuga; sin embargo, en el caso de las flechas, al ser teclas especiales, la información no se puede guardar en una sola variable sino que el sistema envía una secuencia de información que debe ser almacenada en dos variables adicionales para codificar la tecla que se presionó, por lo cual, la información se guarda en las variables ``key2```y ``key3`` que se encargan de ubicar la región de las teclas especiales y decodificar la flecha específica que se presionó. En cuantó al movimiento, para el caso de las flechas, la flecha superior e inferior fijan la velocidad lineal de la tortuga en 2 y -2 unidades/s y la velocidad angular en 0 rad /s respectivamente para que la tortuga solo avance o retroceda, mientras que las teclas derecha e izquierda alternan el proceso y fijan la velocidad angular en 2 rad/s y la velocidad lineal en cero, para que la tortuga solo gire a la derecha o a la izquierda. En el caso del movimiento, accionado por letras, se requiere generar funciones específicas que dibujen la trayectoria de la tortuga. 
+Para el control del nodo Turtlesim con las flechas del teclado, primero se implementó un hilo adicional que se encarga unicamente de escuchar el teclado, luego se creó la función ``listen_keyboard`` que detecta la tecla que se presionó, esta información se guarda primordialmente en la variable ``key`` y posteriormente se usa en una secuencia de condicionales para modificar el movimiento de la tortuga; sin embargo, en el caso de las flechas, al ser teclas especiales, la información no se puede guardar en una sola variable sino que el sistema envía una secuencia de información que debe ser almacenada en dos variables adicionales para codificar la tecla que se presionó, por lo cual, la información se guarda en las variables ``key2`` y ``key3`` que se encargan de ubicar la región de las teclas especiales y decodificar la flecha específica que se presionó. En cuantó al movimiento, para el caso de las flechas, la flecha superior e inferior fijan la velocidad lineal de la tortuga en 2 y -2 unidades/s y la velocidad angular en 0 rad /s respectivamente para que la tortuga solo avance o retroceda, mientras que las teclas derecha e izquierda alternan el proceso y fijan la velocidad angular en 2 rad/s y la velocidad lineal en cero, para que la tortuga solo gire a la derecha o a la izquierda. En el caso del movimiento, accionado por letras, se requiere generar funciones específicas que dibujen la trayectoria de la tortuga. 
 
 ## Generación de Trayectorias
 Para la generación de trayectorias, primero se creó una función paramétrica en Matlab que dibujaba la curva que describe las letras iniciales de los nombres de cada uno de los integrantes de trabajo, luego, en el código se fijaron una serie de puntos iniciales para ubicar la tortuga y que esta empiece a dibujar cada una de las iniciales. Una vez se tenían estos puntos, se variaba la velocidad líneal y angular de la tortuga de tal forma que en un intervalo menor a 2 segundos, la tortuga pudiera dibujar el contorno de la letra deseada acorde a la función implementada en Matlab, para ello se tiene en cuenta que el radio de una circunferencia dibujada por la tortuga en términos de su velocidad lineal y angular viene dado por:
@@ -52,6 +52,19 @@ Una última funcionalidad que es importante mencionar, es la implementación de 
 
 ### Trayectoria de la S
 
+La función hecha en Matlab para generar la trayectoría es la siguiente:
+
+```matlab
+t2 = pi/4:0.1:11*pi/4;
+c2x = 0.5*cos(t2).*(t2<=3*pi/2)+0.5*cos(t2).*(t2>3*pi/2);
+c2y = (0.5*sin(t2)+0.5).*(t2<=3*pi/2)+(-0.5*sin(t2)-0.5).*(t2>3*pi/2);
+figure
+plot(c2x,c2y)
+xlim([-2 2])
+ylim([-2 2])
+title("Trayectoria de la S")
+```
+
 <p align="center">
    <img src="Figuras/Traj_S.png" alt="S generada con Matlab" width="400"><br> 
 
@@ -60,6 +73,21 @@ Una última funcionalidad que es importante mencionar, es la implementación de 
 
 ### Trayectoria de la A
 
+La función hecha en Matlab para generar la trayectoría es la siguiente:
+
+```matlab
+t3 = -2/sqrt(3):0.01:2/sqrt(3);
+c31x = t3.*(t3<=2/sqrt(3));
+c31y = (sqrt(3)*t3+1).*(t3<=0)+(-sqrt(3)*t3+1).*((0<t3) & (t3<=2/sqrt(3)));
+c32x = (t3+1/sqrt(3)).*(t3<=0);
+c32y = 0.*(t3<=0);
+figure
+plot(c31x,c31y,c32x,c32y)
+xlim([-2 2])
+ylim([-2 2])
+title("Trayectoria de la A")
+```
+
 <p align="center">
    <img src="Figuras/Traj_A.png" alt="A generada con Matlab" width="400"><br> 
 
@@ -67,6 +95,22 @@ Una última funcionalidad que es importante mencionar, es la implementación de 
    <img src="Figuras/ARos2.png" alt="A generada con ROS2" width="500"><br> 
 
 ### Trayectoria de la C
+
+La C, se puede considerar como un segmento de circunferencia que engloba toda la curva comprendida entre los 60$^\circ$ y los 300$^\circ$ descritos por el vector que la traza con respecto a su centro, si consideramos que el centro de la misma es el origen, se puede escribir la siguiente función parámetrica que representa la curva que mejor se adapta a lo que queremos:
+
+$$r(t) = <cos(t),sin(t)>, \pi/3 \geq t \leg 5\pi/3$$
+
+La función hecha en Matlab para generar la trayectoría es la siguiente:
+
+```matlab
+t = pi/3:0.1:5*pi/3;
+cx = cos(t);
+cy = sin(t);
+plot(cx,cy)
+xlim([-2 2])
+ylim([-2 2])
+title("Trayectoria de la C")
+```
 
 <p align="center">
    <img src="Figuras/Traj_C.png" alt="C generada con Matlab" width="500"><br> 
