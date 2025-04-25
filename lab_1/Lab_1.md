@@ -2,7 +2,7 @@
 El objetivo primordial de esta práctica de laboratorio es familiarizarse con el entorno básico de ROS2, en particular con el nodo Turtlesim; para ello, este nodo se conectó con un archivo Python que permite el control de movimiento de una tortuga instanciada en dicho nodo; en primera instancia mediante la creación de un workspace de ROS2 a través de los siguientes comandos en la terminal de Linux:
 
 ```bash
-mkdir -p ~/Laboratorio_Robotica/lab_1/ros2_ws/turtlesim_ws/src
+mkdir -p ~/Laboratorio_Robotica/ros2_ws/turtlesim_ws/src
 cd ..
 colcon build
 source /opt/ros/humble/setup.bash
@@ -11,7 +11,7 @@ source /opt/ros/humble/setup.bash
 Una vez creado el workspace, con ROS2 se creó un paquete que genera el código en Python que permite efectuar la conexión con el nodo Turtlesim:
 
 ```bash
-cd ~/Laboratorio_Robotica/lab_1/ros2_ws/turtlesim_ws/src
+cd ~/Laboratorio_Robotica/ros2_ws/turtlesim_ws/src
 ros2 pkg create --build-type ament_python my_turtle_controller
 ```
 
@@ -20,7 +20,7 @@ A partir de este paquete, se creó un archivo ``move_turtle.py`` en la carpeta `
 Una vez se completaron todas las funciones del archivo ``move_turtle.py``, se guardaron los cambios y se retornó a la raíz del workspace para compilar el código y ejecutarlo:
 
 ```bash
-cd ~/Laboratorio_Robotica/lab_1/ros2_ws/turtlesim_ws
+cd ~/Laboratorio_Robotica/ros2_ws/turtlesim_ws
 colcon build
 source install/setup.bash
 ros2 run my_turtle_controller move_turtle
