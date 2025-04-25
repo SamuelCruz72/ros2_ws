@@ -86,7 +86,7 @@ Dado que la latencia del simulador no es muy buena, las ordenes que se le dieron
 La "A" se puede considerar como dos segmentos de recta simétricos con respecto a la vertical que se cruzan en un solo punto y un segmento adicional de recta horizontal que los conecta aproximadamente en el punto medio de su longitud. Si consideramos que el extremo inferior de la A se encuentra en la coordenada (-1,1) y la pendiente de los segmentos de recta está dado por $\pm(tan(\pi/3))$, se puede escribir la siguiente correspondencia a trozos para dibujar el contorno de la letra:
 
 $$g(t) = \begin{cases} \sqrt{3}t+1 , \frac{-2}{\sqrt{3}} \leq t < 0 \\ 
--\sqrt{3}t+1 , 0 < t \geq \frac{2}{\sqrt{3}} \\ 
+-\sqrt{3}t+1 , 0 < t \leq \frac{2}{\sqrt{3}} \\ 
 0, t \leq 0
 \end{cases} $$
 
