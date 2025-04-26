@@ -146,9 +146,9 @@ La "M", se puede ver como 4 lineas con diferentes inclinaciones, primero una lin
 $$
 r_M(t) =
 \begin{cases}
-\langle 3.5,\ 4.5 + 7t \rangle, & 0 \leq t < \frac{2}{7} \\[6pt]
-\langle 3.5 + 5(t - \frac{2}{7}),\ 6.5 - 5(t - \frac{2}{7}) \rangle, & \frac{2}{7} \leq t < \frac{2}{7} + \frac{\sqrt{2}}{7} \\[6pt]
-\langle 5.0 + 5(t - t_2),\ 5.0 + 5(t - t_2) \rangle, & t_2 \leq t < t_2 + \frac{\sqrt{2}}{7} \\[6pt]
+\langle 3.5,\ 4.5 + 7t \rangle, & 0 \leq t < \frac{2}{7} \\
+\langle 3.5 + 5(t - \frac{2}{7}),\ 6.5 - 5(t - \frac{2}{7}) \rangle, & \frac{2}{7} \leq t < \frac{2}{7} + \frac{\sqrt{2}}{7} \\
+\langle 5.0 + 5(t - t_2),\ 5.0 + 5(t - t_2) \rangle, & t_2 \leq t < t_2 + \frac{\sqrt{2}}{7} \\
 \langle 6.5,\ 6.5 - 7(t - t_3) \rangle, & t_3 \leq t < t_3 + \frac{2}{7}
 \end{cases}
 $$
@@ -184,9 +184,9 @@ La "B" puede realizarse de distintas maneras, sin embargo, la usada fue una line
 $$
 r_B(t) =
 \begin{cases}
-\langle 5,\ 4.5 + 7t \rangle, & 0 \leq t < \frac{3}{7} \\[6pt]
-\langle 5 + \sin(7(t - \frac{3}{7})),\ 6.6 - \cos(7(t - \frac{3}{7})) \rangle, & \frac{3}{7} \leq t < \frac{3}{7} + \frac{\pi}{35} \\[6pt]
-\langle x_2 + 7\cos(\frac{\pi}{6})(t - t_2),\ y_2 + 7\sin(\frac{\pi}{6})(t - t_2) \rangle, & t_2 \leq t < t_2 + \frac{0.5}{7} \\[6pt]
+\langle 5,\ 4.5 + 7t \rangle, & 0 \leq t < \frac{3}{7} \\
+\langle 5 + \sin(7(t - \frac{3}{7})),\ 6.6 - \cos(7(t - \frac{3}{7})) \rangle, & \frac{3}{7} \leq t < \frac{3}{7} + \frac{\pi}{35} \\
+\langle x_2 + 7\cos(\frac{\pi}{6})(t - t_2),\ y_2 + 7\sin(\frac{\pi}{6})(t - t_2) \rangle, & t_2 \leq t < t_2 + \frac{0.5}{7} \\
 \langle x_3 + \sin(7(t - t_3)),\ y_3 - \cos(7(t - t_3)) \rangle, & t_3 \leq t < t_3 + \frac{\pi}{35}
 \end{cases}
 $$
