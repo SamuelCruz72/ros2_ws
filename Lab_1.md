@@ -143,7 +143,7 @@ En este caso, la latencia del simulador no afecta mucho la generación de la tra
 
 La "M", se puede ver como 4 lineas con diferentes inclinaciones, primero una linea recta vertical que mida 2 unidades, luego da un giro desde $\pi/2$ hasta $-\pi/4$, y hace la linea para luego girar 90 grados positivos y hacer la siguiente, finalmente se gira hasta $-\pi/2$ y descender 2 unidades. 
 
-\[
+$$
 r_M(t) =
 \begin{cases}
 \langle 3.5,\ 4.5 + 7t \rangle, & 0 \leq t < \frac{2}{7} \\[6pt]
@@ -151,13 +151,13 @@ r_M(t) =
 \langle 5.0 + 5(t - t_2),\ 5.0 + 5(t - t_2) \rangle, & t_2 \leq t < t_2 + \frac{\sqrt{2}}{7} \\[6pt]
 \langle 6.5,\ 6.5 - 7(t - t_3) \rangle, & t_3 \leq t < t_3 + \frac{2}{7}
 \end{cases}
-\]
+$$
 
-\[
+$$
 \text{donde } 
 t_2 = \frac{2}{7} + \frac{\sqrt{2}}{7}, \quad
 t_3 = t_2 + \frac{\sqrt{2}}{7}
-\]
+$$
 
 La función hecha en Matlab para generar la trayectoría es la siguiente:
 
@@ -181,7 +181,7 @@ Las consideraciones para la implementación en ROS2 son parecidas a las anterior
 
 La "B" puede realizarse de distintas maneras, sin embargo, la usada fue una linea vertical recta, y en la punta empezaba a trazarse un circulo, cuando este llegaba hasta la linea horizontal, se usa teleport_to para dibujar una linea horizontal, y para finalizar se realiza otro semicirculo, esta vez en la mitad inferior de la linea vertical inicial, para finalizar la letra.
 
-
+$$
 r_B(t) =
 \begin{cases}
 \langle 5,\ 4.5 + 7t \rangle, & 0 \leq t < \frac{3}{7} \\[6pt]
@@ -189,13 +189,13 @@ r_B(t) =
 \langle x_2 + 7\cos(\frac{\pi}{6})(t - t_2),\ y_2 + 7\sin(\frac{\pi}{6})(t - t_2) \rangle, & t_2 \leq t < t_2 + \frac{0.5}{7} \\[6pt]
 \langle x_3 + \sin(7(t - t_3)),\ y_3 - \cos(7(t - t_3)) \rangle, & t_3 \leq t < t_3 + \frac{\pi}{35}
 \end{cases}
-\]
+$$
 
-\[
+$$
 \text{donde } 
 t_2 = \frac{3}{7} + \frac{\pi}{35}, \quad
 t_3 = t_2 + \frac{0.5}{7}
-\]
+$$
 
 La función hecha en Matlab para generar la trayectoría es la siguiente:
 
