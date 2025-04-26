@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/src/DynamixelSDK/ros/dynamixel_sdk_examples/src/read_write_node.cpp" "CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o" "gcc" "CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o.d"
+  "/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/src/DynamixelSDK/ros/dynamixel_sdk_examples/src/read_write_node.cpp" "CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o" "gcc" "CMakeFiles/read_write_node.dir/src/read_write_node.cpp.o.d"
   )
 
 # Targets to which this target links.

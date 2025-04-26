@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces
+CMAKE_SOURCE_DIR = /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces
+CMAKE_BINARY_DIR = /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces
 
 # Utility rule file for ament_cmake_python_copy_dynamixel_sdk_custom_interfaces.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_dynamixel_sdk_custom_interfaces.dir/c
 include CMakeFiles/ament_cmake_python_copy_dynamixel_sdk_custom_interfaces.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_dynamixel_sdk_custom_interfaces:
-	/usr/bin/cmake -E copy_directory /home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_py/dynamixel_sdk_custom_interfaces /home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces/ament_cmake_python/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces
+	/usr/bin/cmake -E copy_directory /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces/rosidl_generator_py/dynamixel_sdk_custom_interfaces /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces/ament_cmake_python/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces
 
 ament_cmake_python_copy_dynamixel_sdk_custom_interfaces: CMakeFiles/ament_cmake_python_copy_dynamixel_sdk_custom_interfaces
 ament_cmake_python_copy_dynamixel_sdk_custom_interfaces: CMakeFiles/ament_cmake_python_copy_dynamixel_sdk_custom_interfaces.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_copy_dynamixel_sdk_custom_interfaces.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_dynamixel_sdk_custom_interfaces.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_dynamixel_sdk_custom_interfaces.dir/depend:
-	cd /home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces /home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces /home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces /home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces /home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces/CMakeFiles/ament_cmake_python_copy_dynamixel_sdk_custom_interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/src/DynamixelSDK/ros/dynamixel_sdk_custom_interfaces /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces/CMakeFiles/ament_cmake_python_copy_dynamixel_sdk_custom_interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_copy_dynamixel_sdk_custom_interfaces.dir/depend
 

@@ -1,11 +1,11 @@
 {
   "package_name": "turtlebot3_msgs",
   "non_idl_tuples": [
-    "/home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/src/turtlebot3_msgs:msg/SensorState.msg",
-    "/home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/src/turtlebot3_msgs:msg/Sound.msg",
-    "/home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/src/turtlebot3_msgs:msg/VersionInfo.msg",
-    "/home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/src/turtlebot3_msgs:srv/Sound.srv",
-    "/home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/src/turtlebot3_msgs:srv/Dqn.srv",
-    "/home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/src/turtlebot3_msgs:action/Patrol.action"
+    "/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/src/turtlebot3_msgs:msg/SensorState.msg",
+    "/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/src/turtlebot3_msgs:msg/Sound.msg",
+    "/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/src/turtlebot3_msgs:msg/VersionInfo.msg",
+    "/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/src/turtlebot3_msgs:srv/Sound.srv",
+    "/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/src/turtlebot3_msgs:srv/Dqn.srv",
+    "/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/src/turtlebot3_msgs:action/Patrol.action"
   ]
 }

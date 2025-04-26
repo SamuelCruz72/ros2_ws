@@ -1,8 +1,8 @@
-# Install script for directory: /home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__py
+# Install script for directory: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/build/dynamixel_sdk_custom_interfaces/dynamixel_sdk_custom_interfaces__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/samuelcruz/Laboratorio_Robotica/lab_1/ros2_ws/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

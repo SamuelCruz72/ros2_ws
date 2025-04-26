@@ -1,0 +1,86 @@
+[0.043s] Invoking command in '/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/build/turtlebot3_node': AMENT_PREFIX_PATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/src/turtlebot3/turtlebot3_node -DCMAKE_INSTALL_PREFIX=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node
+[0.234s] -- The C compiler identification is GNU 11.4.0
+[0.335s] -- The CXX compiler identification is GNU 11.4.0
+[0.358s] -- Detecting C compiler ABI info
+[0.515s] -- Detecting C compiler ABI info - done
+[0.522s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.523s] -- Detecting C compile features
+[0.523s] -- Detecting C compile features - done
+[0.526s] -- Detecting CXX compiler ABI info
+[0.819s] -- Detecting CXX compiler ABI info - done
+[0.840s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.840s] -- Detecting CXX compile features
+[0.841s] -- Detecting CXX compile features - done
+[0.845s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.083s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.274s] -- Found dynamixel_sdk: 3.8.3 (/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk/share/dynamixel_sdk/cmake)
+[1.277s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.348s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.358s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.368s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.381s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.399s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.448s] -- Found message_filters: 4.3.6 (/opt/ros/humble/share/message_filters/cmake)
+[1.505s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.508s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.698s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.734s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.812s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.823s] -- Looking for pthread.h
+[2.181s] -- Looking for pthread.h - found
+[2.181s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.361s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.362s] -- Found Threads: TRUE  
+[2.420s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[2.632s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.699s] -- Found std_srvs: 4.8.0 (/opt/ros/humble/share/std_srvs/cmake)
+[2.806s] -- Found tf2: 0.25.12 (/opt/ros/humble/share/tf2/cmake)
+[2.831s] -- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)
+[3.044s] -- Found turtlebot3_msgs: 2.3.0 (/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake)
+[3.532s] -- Configuring done
+[3.580s] -- Generating done
+[3.591s] -- Build files have been written to: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/build/turtlebot3_node
+[3.635s] Invoked command in '/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/build/turtlebot3_node' returned '0': AMENT_PREFIX_PATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/src/turtlebot3/turtlebot3_node -DCMAKE_INSTALL_PREFIX=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node
+[3.637s] Invoking command in '/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/build/turtlebot3_node': AMENT_PREFIX_PATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/build/turtlebot3_node -- -j2 -l2
+[3.979s] [  7%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/devices/motor_power.cpp.o[0m
+[12.315s] [ 14%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/devices/sound.cpp.o[0m
+[17.602s] [ 21%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/devices/reset.cpp.o[0m
+[22.347s] [ 28%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/diff_drive_controller.cpp.o[0m
+[25.809s] [ 35%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/dynamixel_sdk_wrapper.cpp.o[0m
+[26.406s] [ 42%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/odometry.cpp.o[0m
+[43.244s] [ 50%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/turtlebot3.cpp.o[0m
+[53.278s] [ 57%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/battery_state.cpp.o[0m
+[61.363s] [ 64%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/imu.cpp.o[0m
+[66.614s] [ 71%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/joint_state.cpp.o[0m
+[73.125s] [ 78%] [32mBuilding CXX object CMakeFiles/turtlebot3_node_lib.dir/src/sensors/sensor_state.cpp.o[0m
+[77.536s] [ 85%] [32m[1mLinking CXX static library libturtlebot3_node_lib.a[0m
+[78.994s] [ 85%] Built target turtlebot3_node_lib
+[79.051s] [ 92%] [32mBuilding CXX object CMakeFiles/turtlebot3_ros.dir/src/node_main.cpp.o[0m
+[83.108s] [100%] [32m[1mLinking CXX executable turtlebot3_ros[0m
+[87.686s] [100%] Built target turtlebot3_ros
+[87.708s] Invoked command in '/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/build/turtlebot3_node' returned '0': AMENT_PREFIX_PATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/build/turtlebot3_node -- -j2 -l2
+[87.712s] Invoking command in '/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/build/turtlebot3_node': AMENT_PREFIX_PATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/build/turtlebot3_node
+[87.731s] -- Install configuration: ""
+[87.731s] -- Installing: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/param
+[87.733s] -- Installing: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/param/waffle_pi.yaml
+[87.735s] -- Installing: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/param/waffle.yaml
+[87.736s] -- Installing: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/param/burger.yaml
+[87.737s] -- Installing: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node/lib/turtlebot3_node/turtlebot3_ros
+[87.770s] -- Set runtime path of "/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node/lib/turtlebot3_node/turtlebot3_ros" to ""
+[87.773s] -- Installing: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node/share/ament_index/resource_index/package_run_dependencies/turtlebot3_node
+[87.774s] -- Installing: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node/share/ament_index/resource_index/parent_prefix_path/turtlebot3_node
+[87.778s] -- Installing: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/environment/ament_prefix_path.sh
+[87.779s] -- Installing: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/environment/ament_prefix_path.dsv
+[87.781s] -- Installing: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/environment/path.sh
+[87.783s] -- Installing: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/environment/path.dsv
+[87.784s] -- Installing: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/local_setup.bash
+[87.786s] -- Installing: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/local_setup.sh
+[87.786s] -- Installing: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/local_setup.zsh
+[87.787s] -- Installing: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/local_setup.dsv
+[87.789s] -- Installing: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.dsv
+[87.790s] -- Installing: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node/share/ament_index/resource_index/packages/turtlebot3_node
+[87.791s] -- Installing: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/cmake/ament_cmake_export_include_directories-extras.cmake
+[87.792s] -- Installing: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/cmake/turtlebot3_nodeConfig.cmake
+[87.793s] -- Installing: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/cmake/turtlebot3_nodeConfig-version.cmake
+[87.797s] -- Installing: /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_node/share/turtlebot3_node/package.xml
+[87.802s] Invoked command in '/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/build/turtlebot3_node' returned '0': AMENT_PREFIX_PATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble LD_LIBRARY_PATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/install/dynamixel_sdk/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/samuelcruz/Laboratorio_Robotica/ros2_ws/turtlebot3_ws/build/turtlebot3_node
