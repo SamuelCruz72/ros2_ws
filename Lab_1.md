@@ -217,3 +217,5 @@ Para el último caso, la latencia afectaba bastante debido a que se debian unir 
 
 ![Bturtle](https://github.com/user-attachments/assets/404faacf-34c3-4a1f-b6e7-1a40ddb74847)
 
+## Video Explicativo del trabajo realizado: https://drive.google.com/file/d/18FUfevNoD3bM2crXAptYdQ-AalnQnr12/view?usp=sharing
+
