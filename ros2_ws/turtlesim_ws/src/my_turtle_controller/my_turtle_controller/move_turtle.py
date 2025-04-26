@@ -12,7 +12,7 @@ import termios
 import time
 
 class TurtleController(Node):
-    def _init_(self):
+    def __init__(self):
         super().__init__('turtle_controller')
         self.publisher_ = self.create_publisher(Twist, '/turtle1/cmd_vel', 10)
         self.timer = self.create_timer(0.05, self.move_turtle)
