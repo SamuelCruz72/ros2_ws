@@ -13,7 +13,7 @@ import time
 
 class TurtleController(Node):
     def _init_(self):
-        super()._init_('turtle_controller')
+        super().__init__('turtle_controller')
         self.publisher_ = self.create_publisher(Twist, '/turtle1/cmd_vel', 10)
         self.timer = self.create_timer(0.05, self.move_turtle)
         self.last_key_time = time.time()
