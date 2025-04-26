@@ -138,3 +138,82 @@ En este caso, la latencia del simulador no afecta mucho la generación de la tra
 
 <p align="center">
    <img src="Figuras/CRos2.png" alt="C generada con ROS2" width="500"><br> 
+
+### Trayectoria de la M
+
+La "M", se puede ver como 4 lineas con diferentes inclinaciones, primero una linea recta vertical que mida 2 unidades, luego da un giro desde $\pi/2$ hasta $-\pi/4$, y hace la linea para luego girar 90 grados positivos y hacer la siguiente, finalmente se gira hasta $-\pi/2$ y descender 2 unidades. 
+
+$$\[
+r_M(t) =
+\begin{cases}
+\langle 3.5,\ 4.5 + 7t \rangle, & 0 \leq t < \frac{2}{7} \\[6pt]
+\langle 3.5 + 5(t - \frac{2}{7}),\ 6.5 - 5(t - \frac{2}{7}) \rangle, & \frac{2}{7} \leq t < \frac{2}{7} + \frac{\sqrt{2}}{7} \\[6pt]
+\langle 5.0 + 5(t - t_2),\ 5.0 + 5(t - t_2) \rangle, & t_2 \leq t < t_2 + \frac{\sqrt{2}}{7} \\[6pt]
+\langle 6.5,\ 6.5 - 7(t - t_3) \rangle, & t_3 \leq t < t_3 + \frac{2}{7}
+\end{cases}
+\]
+
+\[
+\text{donde } 
+t_2 = \frac{2}{7} + \frac{\sqrt{2}}{7}, \quad
+t_3 = t_2 + \frac{\sqrt{2}}{7}
+\]$$
+
+La función hecha en Matlab para generar la trayectoría es la siguiente:
+
+```matlab
+t_total = 2.0/7;
+for t = 0:dt:t_total
+    x = x + v*cos(theta)*dt;
+    y = y + v*sin(theta)*dt;
+    X(end+1) = x; Y(end+1) = y;
+end
+```
+Al cual se le iban variando los ángulos y los tiempos para lograr el resultado deseado.
+
+![TrajM](https://github.com/user-attachments/assets/a9ea94dd-0293-4553-a255-443fe3aa3ec9)
+
+Las consideraciones para la implementación en ROS2 son parecidas a las anteriores, pero debido a que no se realiza ningún teleport_to, se tiene una figura continua la cual se ve afectada por la latencia en la exactitud de los giros y la longitud de los trazos, pero que en general se logra apreciar debidamente la figura.
+
+![Mprovisional](https://github.com/user-attachments/assets/e65fd9eb-2d5f-450c-8226-0a019bd7cce2)
+
+### Trayectoria de la B
+
+La "B" puede realizarse de distintas maneras, sin embargo, la usada fue una linea vertical recta, y en la punta empezaba a trazarse un circulo, cuando este llegaba hasta la linea horizontal, se usa teleport_to para dibujar una linea horizontal, y para finalizar se realiza otro semicirculo, esta vez en la mitad inferior de la linea vertical inicial, para finalizar la letra.
+
+$$\[
+r_B(t) =
+\begin{cases}
+\langle 5,\ 4.5 + 7t \rangle, & 0 \leq t < \frac{3}{7} \\[6pt]
+\langle 5 + \sin(7(t - \frac{3}{7})),\ 6.6 - \cos(7(t - \frac{3}{7})) \rangle, & \frac{3}{7} \leq t < \frac{3}{7} + \frac{\pi}{35} \\[6pt]
+\langle x_2 + 7\cos(\frac{\pi}{6})(t - t_2),\ y_2 + 7\sin(\frac{\pi}{6})(t - t_2) \rangle, & t_2 \leq t < t_2 + \frac{0.5}{7} \\[6pt]
+\langle x_3 + \sin(7(t - t_3)),\ y_3 - \cos(7(t - t_3)) \rangle, & t_3 \leq t < t_3 + \frac{\pi}{35}
+\end{cases}
+\]
+
+\[
+\text{donde } 
+t_2 = \frac{3}{7} + \frac{\pi}{35}, \quad
+t_3 = t_2 + \frac{0.5}{7}
+\]$$
+
+La función hecha en Matlab para generar la trayectoría es la siguiente:
+
+```matlab
+t_total = pi / 6;
+for t = 0:dt:t_total
+    x = x + v*cos(theta)*dt;
+    y = y + v*sin(theta)*dt;
+    theta = theta - w*dt;
+    X(end+1) = x; Y(end+1) = y;
+end
+```
+Igual que en el caso anterior, se aplica el mismo procedimiento del caso anterior de ir variando ángulos según se necesiten, esto para conservar una estructura parecida a la usada en el script de Python.
+
+![TrajB](https://github.com/user-attachments/assets/da89ffd6-b5e1-4bda-aa76-e2ee542daeb6)
+
+
+Para el último caso, la latencia afectaba bastante debido a que se debian unir varios puntos de trazos que no son continuos para generar la letra.
+
+![Bturtle](https://github.com/user-attachments/assets/404faacf-34c3-4a1f-b6e7-1a40ddb74847)
+
