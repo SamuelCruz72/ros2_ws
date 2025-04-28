@@ -212,10 +212,9 @@ Igual que en el caso anterior, se aplica el mismo procedimiento del caso anterio
 
 ![TrajB](https://github.com/user-attachments/assets/da89ffd6-b5e1-4bda-aa76-e2ee542daeb6)
 
-
 Para el último caso, la latencia afectaba bastante debido a que se debian unir varios puntos de trazos que no son continuos para generar la letra.
 
 ![Bturtle](https://github.com/user-attachments/assets/404faacf-34c3-4a1f-b6e7-1a40ddb74847)
 
-## Video Explicativo del trabajo realizado: https://drive.google.com/file/d/18FUfevNoD3bM2crXAptYdQ-AalnQnr12/view?usp=sharing
+## [Video explicativo del trabajo realizado](https://drive.google.com/file/d/18FUfevNoD3bM2crXAptYdQ-AalnQnr12/view?usp=sharing)
 
