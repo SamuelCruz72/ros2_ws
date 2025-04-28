@@ -53,6 +53,7 @@ Una última funcionalidad que es importante mencionar, es la implementación de 
 
 ### Diagramas de flujo
 
+## Diagrama general
 El funcionamiento de la solución planteada se puede ver en los siguientes diagramas, primero el diagrama general que muestra cuando se inicia el código:
 
 ```mermaid
@@ -69,6 +70,73 @@ flowchart TD
     salir --> fin(["FIN"])
 ```
 
+## Diagrama de cada letra de las iniciales
+
+A continuación se detallarán en mayor medida las funciones que dibujan las letras de las iniciales de los integrantes:
+En primer lugar la S:
+
+```mermaid
+flowchart TD
+    A[Dibujar S]
+    B[Traza primer semicírculo]
+    C[Teleport to]
+    D[Traza segundo semicírculo]
+    E[Volver a la pregunta]
+
+    A --> B
+    B -- 'time.sleep' --> C
+    C -- 'time.sleep' --> D
+    D --> E
+```
+
+Diagrama de flujo de la A: 
+
+```mermaid
+flowchart TD
+    A[Dibujar A]
+    C[Traza primer línea]
+    E[Traza segunda línea]
+    G[Teleport to]
+    I[Traza línea horizontal]
+    J[Volver a la pregunta]
+
+    A -- 'posición inicial pi/3' --> C
+    C -- 'gira -pi/3' --> E
+    E -- 'time.sleep' --> G
+    G -- 'time.sleep' --> I
+    I --> J
+```
+
+Diagrama de flujo de la C:
+
+```mermaid
+flowchart TD
+    start(["Dibujar C"]) -- 'posición inicial pi/6' --> dibujarS["Dibuja semicirculo"]
+    dibujarS --> pre["Volver a la pregunta"]
+```
+
+Diagrama de flujo de la M:
+
+```mermaid
+flowchart TD
+    start(["Dibujar M"]) -- 'posición inicial pi/2' --> dibujarS["Traza primer linea"]
+    dibujarS -- 'gira -pi3/4' --> dibujarC["Traza segunda linea"]
+    dibujarC -- 'gira pi/2' --> dibujarK["Traza tercera linea"]
+    dibujarK -- 'gira -pi3/4'--> dibujarB["Traza cuarta horizontal"]
+    dibujarB --> pre["Volver a la pregunta"]
+```
+
+Diagrama de flujo de la B:
+
+```mermaid
+flowchart TD
+    start(["Dibujar B"]) -- 'posición inicial pi/2' --> dibujarS["Dibuja semicirculo"]
+    dibujarS  --> dibujarC["Dibuja semicirculo superior"]
+    dibujarC -- 'time.sleep' --> dibujarK["Teleport to"]
+    dibujarK -- 'time.sleep'--> dibujarx["Traza linea horizontal"]
+    dibujarx --> dibujarB["Traza semicirculo inferior"]
+    dibujarB --> pre["Volver a la pregunta"]
+```
 
 ### Trayectoria de la S
 
@@ -235,5 +303,5 @@ Para el último caso, la latencia afectaba bastante debido a que se debian unir 
 
 ![Bturtle](https://github.com/user-attachments/assets/404faacf-34c3-4a1f-b6e7-1a40ddb74847)
 
-## [Video explicativo del trabajo realizado](https://drive.google.com/file/d/18FUfevNoD3bM2crXAptYdQ-AalnQnr12/view?usp=sharing](https://drive.google.com/file/d/1omVuZdjb9bfxKqyNMNxOrLvLZUHQAp17/view?usp=sharing))
+## [Video explicativo del trabajo realizado](https://drive.google.com/file/d/1omVuZdjb9bfxKqyNMNxOrLvLZUHQAp17/view?usp=sharing)
 
