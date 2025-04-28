@@ -51,6 +51,25 @@ Para solucionar el anterior problema, se empleó el cliente ``SetPen`` que modif
 
 Una última funcionalidad que es importante mencionar, es la implementación de la letra "R" que resetea el entorno de visualización, es decir, limpia el trazado de la tortuga, por medio de la funcion ``clear_background()`` que utiliza el cliente ``Empty``; la devuelve al punto de origen (5.5,5.5,0) y la deja quieta fijando su velocidad linear y angular a cero. Esta funcionalidad resulta de gran utilidad para eliminar los trazos que impiden distinguir los resultados en las últimas pruebas de los obtenidos en las primeras pruebas.
 
+### Diagramas de flujo
+
+El funcionamiento de la solución planteada se puede ver en los siguientes diagramas, primero el diagrama general que muestra cuando se inicia el código:
+
+```mermaid
+flowchart TD
+    start(["Inicio del Programa"]) --> preguntar{{"¿Qué tecla se presionó?"}}
+    preguntar -- 'Flechas' --> dibujarA["Movimiento de la tortuga"]
+    preguntar -- 'Letras de las iniciales' --> dibujarB["Dibujar letra presionada"]
+    preguntar -- 'r' --> reiniciar["Reiniciar y limpiar tablero"]
+    preguntar -- 'q' --> salir["Salir del programa"]
+    reiniciar --> preguntar
+    salir --> preguntar
+    dibujarB --> preguntar
+    dibujarA --> preguntar
+    salir --> fin(["FIN"])
+```
+
+
 ### Trayectoria de la S
 
 La "S" se puede considerar como dos segmentos de circunferencia, el primero dibuja la sección superior de la "S" y engloba la curva antihoraria comprendida entre los 45° y los 270° descritos por el vector de trazado con origen en su centro, mientras que el segundo segmento dibuja la sección inferior y engloba la curva comprendida comprendida entre los 270° y los 495° de una curva trazada en sentido horario con un vector con origen en su centro, si consideramos que el radio de la primera curva es 0.5 unidades y su centro está desplazado 0.5 unidades verticales con respecto a la posición inicial de compilación de la tortuga, mientras que si el radio de la segunda es tambien 0.5 unidades, pero su centro está desplazado -0.5 unidades verticales con respecto al punto anterior, se puede escribir la siguiente función parámetrica que representa la curva que mejor se adapta a lo que queremos:
@@ -216,5 +235,5 @@ Para el último caso, la latencia afectaba bastante debido a que se debian unir 
 
 ![Bturtle](https://github.com/user-attachments/assets/404faacf-34c3-4a1f-b6e7-1a40ddb74847)
 
-## [Video explicativo del trabajo realizado](https://drive.google.com/file/d/18FUfevNoD3bM2crXAptYdQ-AalnQnr12/view?usp=sharing)
+## [Video explicativo del trabajo realizado](https://drive.google.com/file/d/18FUfevNoD3bM2crXAptYdQ-AalnQnr12/view?usp=sharing](https://drive.google.com/file/d/1omVuZdjb9bfxKqyNMNxOrLvLZUHQAp17/view?usp=sharing))
 
