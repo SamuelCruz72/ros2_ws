@@ -51,9 +51,9 @@ Para solucionar el anterior problema, se empleó el cliente ``SetPen`` que modif
 
 Una última funcionalidad que es importante mencionar, es la implementación de la letra "R" que resetea el entorno de visualización, es decir, limpia el trazado de la tortuga, por medio de la funcion ``clear_background()`` que utiliza el cliente ``Empty``; la devuelve al punto de origen (5.5,5.5,0) y la deja quieta fijando su velocidad linear y angular a cero. Esta funcionalidad resulta de gran utilidad para eliminar los trazos que impiden distinguir los resultados en las últimas pruebas de los obtenidos en las primeras pruebas.
 
-### Diagramas de flujo
+## Diagramas de flujo
 
-## Diagrama general
+### Diagrama general
 El funcionamiento de la solución planteada se puede ver en los siguientes diagramas, primero el diagrama general que muestra cuando se inicia el código:
 
 ```mermaid
@@ -70,7 +70,7 @@ flowchart TD
     salir --> fin(["FIN"])
 ```
 
-## Diagrama de cada letra de las iniciales
+### Diagrama de cada letra de las iniciales
 
 A continuación se detallarán en mayor medida las funciones que dibujan las letras de las iniciales de los integrantes:
 En primer lugar la S:
