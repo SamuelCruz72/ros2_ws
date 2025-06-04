@@ -1,0 +1,106 @@
+MODULE Module1
+        CONST robtarget Target_10:=[[-447,20,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_20:=[[-431.444,29.654,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_30:=[[-422.443,17.004,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_40:=[[-433.109,5.466,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_50:=[[-447.372,-7.241,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_60:=[[-433.875,-15.127,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_70:=[[-421.019,-9.707,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_80:=[[-458.405,-17.287,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_90:=[[-473.355,29.687,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_100:=[[-490.956,-22.24,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_110:=[[-480.725,8.646,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_120:=[[-465.933,7.284,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_130:=[[-504.625,-15.836,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_140:=[[-505.445,31.372,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_150:=[[-524.792,14.889,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_160:=[[-541.298,30.626,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_170:=[[-541.277,-14.117,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_180:=[[-560.001,31.022,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_190:=[[-559.3,4.411,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_200:=[[-572.764,-12.977,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_210:=[[-587.832,0.677,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_220:=[[-589.885,33.162,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_230:=[[-626.746,31.936,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_240:=[[-602.195,31.564,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_250:=[[-601.785,9.826,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_260:=[[-631.403,11.17,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_270:=[[-603.239,-11.238,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_280:=[[-628.069,-10.388,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_290:=[[-643.36,30.35,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_300:=[[-641.613,-10.677,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_310:=[[-665.257,-11.125,-30],[1,0,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Home:=[[603.626623856,-0.000000002,536.119117909],[0.043619387,0.000000001,-0.999048222,0],[0,-1,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Maintenance:=[[-542.985042432,10.126443288,685.818194241],[0.042369409,-0.971641358,-0.001618381,0.232626924],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    
+    PROC main()
+        WHILE TRUE DO
+            IF DI_01 = 1 THEN
+                Reset DO_02;
+                Path_10;
+                S;
+                A;
+                M;
+                U;
+                E;
+                L;
+                Path_10;
+                Set DO_01;
+                WaitTime 500;
+                Reset DO_01;
+            ENDIF
+            IF DI_02 = 1 THEN
+                Path_20;
+                Set DO_02;
+            ENDIF
+        ENDWHILE
+    ENDPROC
+    
+    PROC S()
+        MoveL Target_10,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveC Target_20,Target_30,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveL Target_40,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveL Target_50,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveC Target_60,Target_70,v100,z10,TCP_Marcador\WObj:=Pastel;
+    ENDPROC
+    PROC A()
+        MoveJ Target_80,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveL Target_90,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveL Target_100,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveL Target_110,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveL Target_120,v100,z10,TCP_Marcador\WObj:=Pastel;
+    ENDPROC
+    PROC M()
+        MoveJ Target_130,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveL Target_140,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveL Target_150,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveL Target_160,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveL Target_170,v100,z10,TCP_Marcador\WObj:=Pastel;
+    ENDPROC
+    PROC U()
+        MoveJ Target_180,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveL Target_190,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveC Target_200,Target_210,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveL Target_220,v100,z10,TCP_Marcador\WObj:=Pastel;
+    ENDPROC
+    PROC E()
+        MoveJ Target_230,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveL Target_240,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveL Target_250,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveL Target_260,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveL Target_250,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveL Target_270,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveL Target_280,v100,z10,TCP_Marcador\WObj:=Pastel;
+    ENDPROC
+    PROC L()
+        MoveJ Target_290,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveL Target_300,v100,z10,TCP_Marcador\WObj:=Pastel;
+        MoveL Target_310,v100,z10,TCP_Marcador\WObj:=Pastel;
+    ENDPROC
+    PROC Path_10()
+        MoveJ Home,v100,z10,TCP_Marcador\WObj:=wobj0;
+    ENDPROC
+    PROC Path_20()
+        MoveJ Maintenance,v100,z10,TCP_Marcador\WObj:=wobj0;
+    ENDPROC
+ENDMODULE
