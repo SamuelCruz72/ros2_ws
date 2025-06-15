@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/f9c69dea-c353-4ccc-9b68-c679ec500a11)# Laboratorio No. 02 - 2025-I- Robótica Industrial - Trayectorias, Entradas y Salidas Digitales
+# Laboratorio No. 02 - 2025-I- Robótica Industrial - Trayectorias, Entradas y Salidas Digitales
 El objetivo primordial de esta práctica de laboratorio es aprender a controlar el manipulador ABB IRB 140 mediante las funciones proporcionadas por RobotStudio e interactuar con el módulo de entradas y salidas digitales dispuesto en el controlador IRC5, para ello se propone escribir en un tablero los nombres de cada uno de los integrantes del grupo y el dibujo de una estrella de 5 puntas. 
 
 ## Diseño de la Herramienta y el WorkObject
@@ -15,8 +15,10 @@ El diseño de la herramienta se basó en las medidas del flange del robot en el 
 
 Los agujeros para los tornillos se dejaron de un diametro de 6.5 mm, la longitud del espacio para el marcador y el resorte es de 11 mm, además de esto, se seleccionó un ángulo de 130 grados, evitando asi ángulos de 45 y 90 grados para evitar singularidades, problemas de control de orientación y comportamientos mecánicos no deseados.
 
-![markador_angulo](https://github.com/user-attachments/assets/fccb9181-a165-4471-9d05-e3f27c99552c)
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/fccb9181-a165-4471-9d05-e3f27c99552c" alt="Diseño de herramienta" width="400">
+</p>
 
 con ello y teniendo en cuenta las tolerancias que se deben considerar con la impresión en 3D, se logró obtener la siguiente herramienta:
 
