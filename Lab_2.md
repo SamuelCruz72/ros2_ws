@@ -100,5 +100,19 @@ Después de tener los puntos base, se utilizan las instrucciones "MoveJ, MoveC, 
   <img src="https://github.com/user-attachments/assets/751ecae1-9cd6-42ae-8715-3a66508b0398" alt="Diseño de herramienta" width="400">
 </p>
 
-La rutina que se observa describe una "S", se utiliza el MoveJ para llegar a la posición inicial de la trayectoria, y a partir de ahí hace un MoveC para la primera curva de la S, luego realiza dos MoveL y finaliza con un MoveC.
+La rutina que se observa describe una "S", se utiliza el MoveJ para llegar a la posición inicial de la trayectoria, y a partir de ahí hace un MoveC para la primera curva de la S, luego realiza dos MoveL y finaliza con un MoveC. Para las otras letras se siguió el mismo procedimiento con los puntos y luego uniendolos por medio de las instrucciones "Move", el siguiente diagrama representa la secuencia del "main()" del programa:
 
+```mermaid
+flowchart TD
+    Start["main (punto de entrada)"]
+    Start --> RDO2["Reset DO_02 y DO_01"]
+
+    RDO2 --> CASA["CASA"]
+    CASA --> SAMUEL["Samuel"]
+    SAMUEL --> MATEO["Mateo"]
+    MATEO --> Star["Star"]
+    Star --> CASA2["HOME"]
+    CASA2 --> SDO1["Set DO_01 y Reset DO_01"]
+    SDO1 --> MT["maintenance"]
+    MT --> SDO2["Set DO_02"]
+```
