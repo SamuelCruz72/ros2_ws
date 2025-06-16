@@ -92,3 +92,13 @@ A su vez, se garantizó que el marco de referencia de cada punto tuviera la mism
 
 <p align="center">
    <img src="Figuras\Lab2\Object.png" alt="Trayectorias del Pastel" width="400"><br> 
+
+
+Después de tener los puntos base, se utilizan las instrucciones "MoveJ, MoveC, y MoveL", el MoveJ fue usado para pasar de una letra a la otra, puesto que tenia que subir 20 mm después de realizar la letra, con el objetivo de no tener trazos erróneos al momento de pasar de un a letra a la otra. MoveC se uso para las curvas, y MoveL para las lineas rectas, a continuación se muestra la rutina para una letra:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/751ecae1-9cd6-42ae-8715-3a66508b0398" alt="Diseño de herramienta" width="400">
+</p>
+
+La rutina que se observa describe una "S", se utiliza el MoveJ para llegar a la posición inicial de la trayectoria, y a partir de ahí hace un MoveC para la primera curva de la S, luego realiza dos MoveL y finaliza con un MoveC.
+
