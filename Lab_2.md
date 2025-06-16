@@ -122,7 +122,6 @@ A continuación se muestra un video explicativo del trabajo realizado y también
 
 Y por último se muestra la rutina funcionando en un robot del laboratorio LabSIR:
 
-En el video se puede ver como se usan las entradas y salidas digitales de la estación, tanto para iniciar la rutina, como para ir a mantenimiento. También se prende un LED cuando se presiona el botón de ir a mantenimiento.
-
 ## [Resultado en el LabSIR](https://drive.google.com/file/d/17lG5yoWurUFWmMb-tHaLW3emojeckRfM/view?usp=sharing)
 
+En el video se puede ver como se usan las entradas y salidas digitales de la estación, tanto para iniciar la rutina, como para ir a mantenimiento. También se prende un LED cuando se presiona el botón de ir a mantenimiento.
