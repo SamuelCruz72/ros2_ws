@@ -116,3 +116,5 @@ flowchart TD
     SDO1 --> MT["maintenance"]
     MT --> SDO2["Set DO_02"]
 ```
+A continuación se muestra un video explicativo del trabajo realizado y también la simulación en RobotStudio
+
