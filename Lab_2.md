@@ -37,7 +37,7 @@ Después de que se diseñó y se calibró la herramienta, se escogió un WorkObj
 Una vez se tienen bien definidos todos los objetos que intervienen en la simulación, se importan sus respectivos modelos CAD a la estación de trabajo, se ubican en posiciones muy similares a las del laboratorio y se vinculan de ser necesario al modelo deseado del robot ABB, con lo cual toda la vista de planta del entorno de la smulación queda de la siguiente manera:
 
 <p align="center">
-   <img src="Figuras\Lab2\Planta.png" alt="Vista de Planta" width="400"><br> 
+   <img src="Figuras\Lab2\Planta.png" alt="Vista de Planta" width="600"><br> 
 
 En el caso de la banda transportadora, no se conocían las dimensiones exactas de la banda del laboratorio, por lo cual, se eligió el modelo CAD más pequeño de las bibliotecas por defecto de Robot Studio.
 
@@ -80,7 +80,7 @@ Para evitar que la rutina inicial de movimiento de la banda se ejecutara simult�
 Estas consideraciones se ven reflejadas en el siguiente diagrama de bloques para la lógica general de la simulación:
 
 <p align="center">
-   <img src="Figuras\Lab2\Logica.png" alt="Logica de Simulación" width="400"><br> 
+   <img src="Figuras\Lab2\Logica.png" alt="Logica de Simulación" width="800"><br> 
 
 Las señales de los Timer y del Inicio no siempre prevalecían en el tiempo sino que eran pulsos, por lo cual se requirió del uso de Latches para detectar los flancos de subida de dichas señales y almacenarlos en memoria para poder usarlas posteriormente, una vez se terminaban de usar, estos se reseteaban con señales internas en la rutina para evitar futuros problemas en la misma rutina o en ejecuciones posteriores. 
 
