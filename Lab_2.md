@@ -32,6 +32,12 @@ con ello y teniendo en cuenta las tolerancias que se deben considerar con la imp
 
 Después de que se diseñó y se calibró la herramienta, se escogió un WorkObject para dibujar los nombres y la estrella de 5 puntas, los criterios de elección fueron su planitud para no modificar mucho la trayectoria deseada, su rigidez para no deformarse con la presión que ejerce el marcador y sus dimensiones para que una de ellas no superara el ancho de la banda presente en el laboratorio, es decir 20 cm. Con todo esto presente, la elección final fue un tablero acrílico de 20x28cm.
 
+Workobject seleccionado:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e57c98a5-12e6-481f-a67f-fb08e7b39ffd" alt="Diseño de herramienta" width="400">
+</p>
+
 ## Secuencia General de Movimientos
 
 Una vez se tienen bien definidos todos los objetos que intervienen en la simulación, se importan sus respectivos modelos CAD a la estación de trabajo, se ubican en posiciones muy similares a las del laboratorio y se vinculan de ser necesario al modelo deseado del robot ABB, con lo cual toda la vista de planta del entorno de la smulación queda de la siguiente manera:
@@ -125,3 +131,9 @@ Y por último se muestra la rutina funcionando en un robot del laboratorio LabSI
 ## [Resultado en el LabSIR](https://drive.google.com/file/d/17lG5yoWurUFWmMb-tHaLW3emojeckRfM/view?usp=sharing)
 
 En el video se puede ver como se usan las entradas y salidas digitales de la estación, tanto para iniciar la rutina, como para ir a mantenimiento. También se prende un LED cuando se presiona el botón de ir a mantenimiento.
+
+Resultado dibujado en el workobject fisico:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/54fc72d2-853a-47bc-b467-194f69d11a13" alt="Diseño de herramienta" width="400">
+</p>
