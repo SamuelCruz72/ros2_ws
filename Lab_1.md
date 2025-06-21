@@ -159,14 +159,14 @@ title("Trayectoria de la S")
 ```
 
 <p align="center">
-   <img src="Figuras/Traj_S.png" alt="S generada con Matlab" width="400"><br> 
+   <img src="Figuras\Lab1\Traj_S.png" alt="S generada con Matlab" width="400"><br> 
 
 Ahora bien, para extrapolar estos resultados al control de movimiento de la tortuga de ROS2, en primer lugar debemos hacer la configuración inicial de la tortuga, para ello primero escogemos una posición (x,y) arbitraria para ubicar la tortuga y empezar a dibujar. Como la tortuga se controla por velocidad, se puede asemejar al vector de velocidad de la curva parámetrica, recordemos que este vector es tangente a la curva y en el caso de las circunferencias también es perpendicular al vector de trazado, por ende la orientación inicial de la tortuga deberá ser perpendicular al vector inical de posición, como en este caso el vector inicia en $\pi/4$ radianes, la orientación debe ser $3\pi/4$ radianes. Después fijamos las velocidades lineales y angulares junto con los tiempos de acuerdo a las ecuaciones expuestas en la sección anterior.
 
 Dado que la latencia del simulador no es muy buena, las ordenes que se le dieron a la tortuga no se suelen ejecutar a cabalidad y esta termina un ciclo en una posición y orientación indeseada, por lo cual, resulta necesario hacer una serie de correciones con la función ``teleport_to`` a fin de asegurarse que la posición de la tortuga, efectivamente sea el punto medio de ambos centros de circunferencia y su orientación para el sgundo ciclo sea 0 radianes. Esto asegura una "S" con una forma casi uniforme en cada iteración que se realice:
 
 <p align="center">
-   <img src="Figuras/SRos2.png" alt="S generada con ROS2" width="500"><br> 
+   <img src="Figuras\Lab1\SRos2.png" alt="S generada con ROS2" width="500"><br> 
 
 ### Trayectoria de la A
 
@@ -193,12 +193,12 @@ title("Trayectoria de la A")
 ```
 
 <p align="center">
-   <img src="Figuras/Traj_A.png" alt="A generada con Matlab" width="400"><br> 
+   <img src="Figuras\Lab1\Traj_A.png" alt="A generada con Matlab" width="400"><br> 
 
 Las consideraciones para la implementación en ROS2 son muy similares al caso anterior, con la excepción de que en este caso la correspondencia a trozos se puede asociar directamente con el movimiento de la tortuga teniendo precaución en la orientación ya que está se le expresa a la tortuga en radianes, por lo cual se le debe aplicar la tangente inversa a las pendientes para poder obtener dicho parámetro, además como se puede apreciar en Matlab para dibujar la horizontal se debe usar si o si la teletransportación dado que se genera un trazo discontinuo. 
 
 <p align="center">
-   <img src="Figuras/ARos2.png" alt="A generada con ROS2" width="500"><br> 
+   <img src="Figuras\Lab1\ARos2.png" alt="A generada con ROS2" width="500"><br> 
 
 ### Trayectoria de la C
 
@@ -219,12 +219,12 @@ title("Trayectoria de la C")
 ```
 
 <p align="center">
-   <img src="Figuras/Traj_C.png" alt="C generada con Matlab" width="500"><br> 
+   <img src="Figuras\Lab1\Traj_C.png" alt="C generada con Matlab" width="500"><br> 
 
 En este caso, la latencia del simulador no afecta mucho la generación de la trayectoria, por lo que la "C" generada será muy similar en casi todas las pruebas realizadas. En cuanto a la orientación y otras consideraciones de movimiento, se toman las mismas medidas que para la "S" y se verifica que esta sea perpendicular al vector de posición, en este caso la orientación inical se fija en $5\pi/6$.
 
 <p align="center">
-   <img src="Figuras/CRos2.png" alt="C generada con ROS2" width="500"><br> 
+   <img src="Figuras\Lab1\CRos2.png" alt="C generada con ROS2" width="500"><br> 
 
 ### Trayectoria de la M
 

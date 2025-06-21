@@ -18,3 +18,4 @@
 En este repositorio se incluyen todos los archivos fuente y la documentación relacionada con el desarrollo de cada uno de los laboratorios de la asignatura Robótica 2025- I de la Universidad Nacional de Colombia:
 1. [Robótica de Desarrollo, Intro a ROS 2 Humble - Turtlesim](https://github.com/SamuelCruz72/Laboratorio_Robotica/blob/main/Lab_1.md)
 2. [Robótica Industrial - Trayectorias, Entradas y Salidas Digitales](https://github.com/SamuelCruz72/Laboratorio_Robotica/blob/main/Lab_2.md)
+2. [Robótica Industrial - Análisis y Operación del Manipulador Motoman MH6](https://github.com/SamuelCruz72/Laboratorio_Robotica/blob/main/Lab_3.md)
