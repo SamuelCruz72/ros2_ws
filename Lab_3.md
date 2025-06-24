@@ -21,13 +21,13 @@ $$r(\theta) = e^{sin(\theta)}-2cos(4\theta)$$
 Esta función tiene el defecto de dibujar una mariposa simple con alas que sobresalen del círculo unitario centrado en el origen:
 
 <p align="center">
-   <img src="Figuras\Lab3\Sin inscribir.png" alt="Mariposa pequeña" width="600"><br> 
+   <img src="Figuras\Lab3\Sin Inscribir.png" alt="Mariposa pequeña" width="600"><br> 
 
 Para corregir los excesos en las alas, se calcula el valor máximo de la función con Matlab y se divide toda la función por el valor encontrado, en este caso es 4.0599. Esto permite inscribir la mariposa en una circunferencia centrada en el origen con radio arbitrario, escalando la función por un parámetro $A$.
 
 Esta función tambien puede rotar alrededor del eje z con pasos de $90^\circ$ tan solo con añadir un parámetro $k$ al ángulo que opera al seno en la exponencial, de tal forma que se cumpla con la siguiente restricción:
 
-$$k = \left\{\frac{n\pi}{2}/n \owns \mathbb{Z} \right\}$$
+$$k = \{\frac{n\pi}{2}/n \owns \mathbb{Z} \}$$
 
 Con lo cual, si juntamos ambas correcciones a la función original, nos queda la siguiente expresión, con la cual controlamos el tamaño máximo de la mariposa con el parámetro $A$ y la orientación con el parámtero $k$:
 
