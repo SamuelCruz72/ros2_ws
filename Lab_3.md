@@ -45,6 +45,21 @@ Por otro lado, el Home2 es una posición alternativa con la que viene el robot y
 Como tal no hay una posición mejor puesto que depende del uso para el que se requiera, una posición puede ser mejor para unas aplicaciones pero peor para otras, por lo que es muy relativo, pero si se quiere elegir, podría decirse que Home1 puede llegar a ser mejor debido a que es una posición mas compacta del robot en la que ocupa menos espacio.
 ## Movimientos manuales Y niveles de velocidad para Motoman MH6
 
+Para realizar movimientos manuales, el procedimiento a seguir es el siguiente:
+
+Primero claramente se encience el robot y el controlador, luego en el teach pendant se debe mover el interruptor a la posición de "Teach", tiene una mano encima de donde dice Teach para reconocerla, luego se habilitan los servomotres, presionando Servo ON READY la cual esta entre SIMPLE MENU y ASSIST, luego se debe mantener el botón de hombre muerto para permitir el movimiento, este se encuentra en la parte de atrás del teach pendant.
+
+Para los cambios de modos de movimiento, se presiona el botón "COORD" y luego se puede observar las distintas opciones de las que dispone, como pueden ser Base con las coordenadas cartesianas, Joint para mover por articulaciones, tool para mover respecto al TCP y User para mover respecto a unas coordenadas definidas por el usuario.
+
+Para realizar estos movimientos en Joint y en las coordenadas cartesianas, se usan los botones "X-, X+, Y-, Y+, Z-, Z+" con distintas letras debajo de ellas para mover distintas articulaciones, como el robot tiene más grados de libertad debido al riel y a la utilidad que gira, se usan todos los botones, si no se tuvieran, habrian 4 botones de movimiento que no harían nada.
+
+En la imagen se pueden apreciar los botones mencionados de configuración y de movimiento.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/09cf001e-4487-4ff8-9df2-1c804d3650a8" alt="Teach pendant del Yaskawa Motoman MH6" width="300">
+</p>
+
+
 ## Funcionalidades de RoboDK
 
 RobotDK es un software de simulación y programación para robots industriales.
