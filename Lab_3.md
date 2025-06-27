@@ -42,9 +42,39 @@ Por otro lado, el Home2 es una posición alternativa con la que viene el robot y
   <img src="https://github.com/user-attachments/assets/82b48ab5-1a92-4c56-b172-76596d15574c" alt="Condiciones articulares para Home1" width="400">
 </p>
 
+Como tal no hay una posición mejor puesto que depende del uso para el que se requiera, una posición puede ser mejor para unas aplicaciones pero peor para otras, por lo que es muy relativo, pero si se quiere elegir, podría decirse que Home1 puede llegar a ser mejor debido a que es una posición mas compacta del robot en la que ocupa menos espacio.
 ## Movimientos manuales Y niveles de velocidad para Motoman MH6
 
 ## Funcionalidades de RoboDK
+
+RobotDK es un software de simulación y programación para robots industriales.
+Con este software es posible simular, optimizar y programar robots de distintas marcas sin necesidad de tener que hacerlo directamente con el controlador físico del robot.
+
+Dentro de las principales aplicaciones de RobotDK están:
+
+- Programación offline : Permite crear los programas para el robot sin necesidad de detener la producción y puede importar distintas geometrías CAD, para generar trayectorias en ellas por ejemplo. Esto podría ser usado para corte, pintura o soldadura.
+- Su interfaz es compatible con una gran variedad de marcas, debido a ello se pueden importar muchos robots a RobotDK con distintas características según la necesidad, entre las marcas están ( ABB, KUKA, Yaskawa Motoman, Fanuc, UR, etc.)
+- Es posible visualizar y simular los movimientos del robot antes de ejecutarlos en el robot real, también cuenta con detección de colisiones y límites articulares.
+- Tiene aplicaciones de manufactura avanzada como puede ser soldadura por arco, paletizado y fresado.
+
+La comunicación de RoboDK con el manipulador puede realizarse con programación offline y comunicación en tiempo real, en el primer caso, RoboDK genera el código nativo del robot, en el laboratorio anterior este código nativo era RAPID, en este caso es INFORM, ese archivo se transfiere al controlador del robot por medio de USB o Ethernet y el robot lo ejecuta, el archivo usado es un ".JBI".
+
+En la comunicación en tiempo real RoboDK puede conectarse directamente al robot vía Ethernet usando su API, se pueden controlar los movimientos, leer sus sensores y cambiar las velocidades todo mediante un script, que puede ser de Matlab, C++, Python, etc.
+Puede ser muy útil si se quiere tener una gran cantidad de datos en tiempo real del robot.
+
+Por otro lado, lo que hace RoboDK para mover el manipulador es bastante impresionante, por un lado debe calcular la cinemática directa o inversa según el robot lo requiera, luego debe generar las trayectorias y convertirlas en el código específico del robot, para que el robot lo entienda, y luego utiliza alguna de las dos comunicaciones mencionadas para enviar el código al robot.
+
+```mermaid
+flowchart TD
+    A[Inicio] --> B[Configurar robot en RoboDK]
+    B --> C{¿Conexión directa?}
+    C -- Sí --> D[Enviar comandos por API]
+    C -- No --> E[Generar código offline]
+    D --> F[Robot se mueve en tiempo real]
+    E --> G[Transferir código al controlador]
+    G --> H[Robot ejecuta programa]
+    F --> I[Fin]
+    H --> I[Fin]
 
 ## Comparación RoboDK y RobotStudio
 
