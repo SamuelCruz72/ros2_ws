@@ -19,7 +19,7 @@ En esta práctica de laboratorio se busca comprender el funcionamiento del Motom
 Home1 y Home2 son dos posiciones predefinidas que son posiciones de referencia para el robot, a pesar de ambas ser "Home" cumplen funciones diferentes. En ocasiones tambien se habla de Home0, que puede ser usada para transporte, almacenamiento o mantenimiento pero no es documentada como Home1 o Home2.
 ### Home1
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/0e2f78c2-788e-42c6-8621-c3a52bff539b" alt="Yaskawa Motoman MH6 en Home1" width="400">
+  <img src="https://github.com/user-attachments/assets/0e2f78c2-788e-42c6-8621-c3a52bff539b" alt="Yaskawa Motoman MH6 en Home1" width="300">
 </p>
 
 Normalmente el Home1 es la posición de referencia principal, usualmente viene preconfigurada por el fabricante. Se utiliza como un punto de seguridad para inicializar el robot, hacer un reinicio del sistema o posicionarlo en una postura más compacta, como se puede observar en la imagen. Suele estar alejada del área de trabajo lo que puede ayudar a evitar colisiones cuando se enciende o reinicia.
@@ -27,19 +27,19 @@ Normalmente el Home1 es la posición de referencia principal, usualmente viene p
 Las condiciones articulares para Home1 son las siguientes:
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/850989f0-ce59-48c8-ab7b-4d2dfb7b1e0a" alt="Condiciones articulares para Home1" width="400">
+  <img src="https://github.com/user-attachments/assets/850989f0-ce59-48c8-ab7b-4d2dfb7b1e0a" alt="Condiciones articulares para Home1" width="300">
 </p>
 
 ### Home2
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/db801c7c-b0f2-40fe-9e09-30f388cd3771" alt="Yaskawa Motoman MH6 en Home2" width="400">
+  <img src="https://github.com/user-attachments/assets/db801c7c-b0f2-40fe-9e09-30f388cd3771" alt="Yaskawa Motoman MH6 en Home2" width="300">
 </p>
 
 Por otro lado, el Home2 es una posición alternativa con la que viene el robot y puede ser definida por el usuario, es comúnmente usada como posiciones iniciales de distintos ciclos de trabajo, como podría ser la postura que facilite el inicio de una rutina o de un proceso, en este caso esta extendido el robot, facilitando de alguna forma el iniciar las rutinas para las trayectorias polares. Al ser personalizable puede usarse según la conveniencia del caso, como una posición para calibrar herramientas o cambio de las mismas.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/82b48ab5-1a92-4c56-b172-76596d15574c" alt="Condiciones articulares para Home1" width="400">
+  <img src="https://github.com/user-attachments/assets/82b48ab5-1a92-4c56-b172-76596d15574c" alt="Condiciones articulares para Home1" width="300">
 </p>
 
 Como tal no hay una posición mejor puesto que depende del uso para el que se requiera, una posición puede ser mejor para unas aplicaciones pero peor para otras, por lo que es muy relativo, pero si se quiere elegir, podría decirse que Home1 puede llegar a ser mejor debido a que es una posición mas compacta del robot en la que ocupa menos espacio.
@@ -75,6 +75,7 @@ flowchart TD
     G --> H[Robot ejecuta programa]
     F --> I[Fin]
     H --> I[Fin]
+```
 
 ## Comparación RoboDK y RobotStudio
 
