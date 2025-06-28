@@ -94,6 +94,19 @@ flowchart TD
 
 ## Comparación RoboDK y RobotStudio
 
+|                         **Item**                        |   **RobotStudio**   |      **RoboDK**      |
+|:-------------------------------------------------------:|:-------------------:|:--------------------:|
+|                       Versatilidad                      |        Media        |         Alta         |
+|                       Intuitividad                      |        Media        |         Alta         |
+|         Estética visual de la  interfaz gráfica         |         Alta        |      Media/Baja      |
+|               Consumo de recursos  de CPU               |   Consumo Elevado   |   Consumo Moderado   |
+|           Disponibilidad de  Smart Components           |         Alta        |         Media        |
+|         Simplicidad al importar  objetos CAD externos        |         Alta        |      Media      |
+|   Apertura a diversidad de  lenguajes de programación   |         Baja        |         Alta         |
+|          Facilidad de creación  de trayectorias         |        Media        |         Alta         |
+| Herramientas para modificar  posiciones en trayectorias | Alta Disponibilidad | Disponibilidad Media |
+|        Simplicidad de conexión  con robot físico        |         Baja        |         Alta         |
+
 ## Generación de Trayectorias Polares
 
 La figura electa para dibujar con el manipulador es la silueta de una mariposa simétrica con respecto a su eje vertical, para ello, se parte de un diseño inicial con la siguiente función en coordenadas polares:
@@ -111,7 +124,7 @@ Esta función tambien puede rotar alrededor del eje z con pasos de $90^\circ$ ta
 
 $$k = \{\frac{n\pi}{2}/n \owns \mathbb{Z} \}$$
 
-Con lo cual, si juntamos ambas correcciones a la función original, nos queda la siguiente expresión, con la cual controlamos el tamaño máximo de la mariposa con el parámetro $A$ y la orientación con el parámtero $k$:
+Con lo cual, si juntamos ambas correcciones a la función original, nos queda la siguiente expresión, con la cual controlamos el tamaño máximo de la mariposa con el parámetro $A$ y la orientación con el parámetro $k$:
 
 $$r(\theta,A,k) = \frac{A}{4.0599}\left(e^{sin(\theta+k)}-2cos(4\theta)\right)$$
 
@@ -125,5 +138,6 @@ Para convertir la función polar a coordenadas cartesianas se emplean las siguie
 $$x=rcos(\theta)$$
 $$y=rsin(\theta)$$
 
+## [Video explicativo del trabajo realizado y simulación](https://drive.google.com/file/d/1dv9j6Z558zDxUwWrr6xU5W7V4v6KYOrM/view?usp=sharing)
 
-## [Resultado de en el Lab](https://drive.google.com/file/d/1agfuaRuySXaeZ-Lx5TB0GM83s2Mxc1Sw/view?usp=sharing)
+## [Resultado en el Lab](https://drive.google.com/file/d/1agfuaRuySXaeZ-Lx5TB0GM83s2Mxc1Sw/view?usp=sharing)
