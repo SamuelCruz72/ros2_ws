@@ -61,12 +61,12 @@ En la imagen se pueden apreciar los botones mencionados de configuración y de m
 
 ## Niveles de velocidad para Motoman MH6
 
-En el Motoman hay 8 velocidades a las que se puede acceder mediante las opciones de edición, cuyas características se resumen en la siguiente figura:
+En el Motoman hay 8 velocidades a las que se puede acceder mediante el Flex Pendant, sus características principales se resumen en la siguiente figura:
 
 <p align="center">
    <img src="Figuras\Lab3\Velocidades.png" alt="Mariposa grande" width="600"><br> 
 
-Ahora bien, si se requiere cambiar el nivel de velocidad para el Motoman, primero se debe colocar la llave en la posición de "Teach", posteriormente se debe presionar el botón "MAIN MENU". Una vez la pantalla se encuentre en el menú, se selecciona “Robot”, luego se entra a “Override” y se emplean las teclas de dirección para seleccionar el valor de limitación. Por último se usan las teclas [+]/[-] para aumentar o disminuir la velocidad y se presiona "ENTER" para confirmar el nuevo valor. Para verificar el nivel de velocidad máximo se debe revisar la parte superior del Flex Pendant donde aparece el valor actualizado de override.
+Ahora bien, si se requiere cambiar el límite general de velocidad para el Motoman, primero se debe colocar la llave en la posición de "Teach", posteriormente se debe presionar el botón "MAIN MENU". Una vez la pantalla se encuentre en el menú, se selecciona “Robot”, luego se entra a “Override” y se emplean las teclas de dirección para seleccionar el valor de limitación. Por último se usan las teclas [+]/[-] para aumentar o disminuir la velocidad y se presiona "ENTER" para confirmar el nuevo valor. Para verificar el nivel de velocidad máximo se debe revisar la parte superior del Flex Pendant donde aparece el valor actualizado de override.
 
 ## Funcionalidades de RoboDK
 
@@ -102,6 +102,14 @@ flowchart TD
 
 ## Comparación RoboDK y RobotStudio
 
+Tanto RobotStudio como RoboDK son software que permiten programar trayectorias y rutinas para cargarlas a distintos modelos de robot industriales. Sin embargo, RobotStudio está enfocado en robots de la marca ABB, mientras que RoboDK permite programar robots de distintas marcas manufactureras. A su vez, RoboDK cuenta con la facilidad de que permite generar trayectorias con distintos lenguajes de programación como C++ y Python, mediante el uso de API's, mientras que RobotStudio únicamente permite programar movimientos y rutinas con RAPID.
+
+En cuanto al apartado visual, RobotStudio ofrece un entorno mucho más atractivo, dado que se asemeja mucho más al ambiente real en el cual se puede encontrar el robot, cuenta con un piso bien definido, herramientas de navegación por el entorno y cambios de orientación en la cámara de visualización. En cambio, RoboDK ofrece un entorno mucho más simple donde hay un espacio abstracto en el cual se pueden configurar los elementos de la operación; a su vez las texturas y los detalles del robot son mucho más generales y simples que en RobotStudio; este último apartado es una gran desventaja para RobotStudio en el caso de los computadores con bajos recursos, dado que para un correcto y fluido funcionamiento de las simulaciones se requieren de altas especificaciones en el hardware del computador.
+
+Por último, pero no menos importante, se encuentra el apartado de la operabilidad del usuario y es que si bien es cierto que RoboDK cuenta con menos herramientas para la modificación de trayectorias y su catalogo de Smart Components es más reducido que en RobotStudio, su uso es más intuitivo y la inclusión de las herramientas anteriores en el programa es relativamente más fácil de implementar que en RobotStudio, esto incluye la importación de modelos CAD externos y la carga del programa al robot físico. 
+
+Estas consideraciones se resumen en la siguiente tabla:
+
 |                         **Item**                        |   **RobotStudio**   |      **RoboDK**      |
 |:-------------------------------------------------------:|:-------------------:|:--------------------:|
 |                       Versatilidad                      |        Media        |         Alta         |
@@ -114,6 +122,8 @@ flowchart TD
 |          Facilidad de creación  de trayectorias         |        Media        |         Alta         |
 | Herramientas para modificar  posiciones en trayectorias | Alta Disponibilidad | Disponibilidad Media |
 |        Simplicidad de conexión  con robot físico        |         Baja        |         Alta         |
+
+En resumidas cuentas, ambos software cuentan con muchas ventajas y desventajas para la programación de robots industriales, por lo que la elección de uno o de otro puede variar según aspectos como la disponibilidad de robot físicos, especificaciones de los computadores empleados para programar y validaciones subjetivas del programador final. 
 
 ## Generación de Trayectorias Polares
 
