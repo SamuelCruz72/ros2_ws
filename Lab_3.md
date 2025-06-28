@@ -156,6 +156,8 @@ Para convertir la función polar a coordenadas cartesianas se emplean las siguie
 $$x=rcos(\theta)$$
 $$y=rsin(\theta)$$
 
+Ahora bien para implementar esta trayectoria en Python y que esta se pueda cargar al robot se debe hacer uso de la librería ``robodk.robolink`` que es una API que comunica el cógico fuente de Python con el entorno de comunicación del Motoman y también se debe hacer uso de la librería ``robodk.robomath`` para poder implementar la función en coordenadas polares que dibuja la mariposa. Una vez se tengan importadas estas librerias, se debe inicializar el nodo del robot, definir parámetros de figura y relacionar las trayectorias polares a coordenadas cartesianas para poder moverlas con ``robot.MoveL()``. Dicha rutina se encuentra definida en el archivo ``Mariposa.py``
+
 ## [Video explicativo del trabajo realizado y simulación](https://drive.google.com/file/d/1dv9j6Z558zDxUwWrr6xU5W7V4v6KYOrM/view?usp=sharing)
 
 ## [Resultado en el Lab](https://drive.google.com/file/d/1agfuaRuySXaeZ-Lx5TB0GM83s2Mxc1Sw/view?usp=sharing)
