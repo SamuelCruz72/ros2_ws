@@ -43,7 +43,7 @@ Por otro lado, el Home2 es una posición alternativa con la que viene el robot y
 </p>
 
 Como tal no hay una posición mejor puesto que depende del uso para el que se requiera, una posición puede ser mejor para unas aplicaciones pero peor para otras, por lo que es muy relativo, pero si se quiere elegir, podría decirse que Home1 puede llegar a ser mejor debido a que es una posición mas compacta del robot en la que ocupa menos espacio.
-## Movimientos manuales Y niveles de velocidad para Motoman MH6
+## Movimientos manuales Motoman MH6
 
 Para realizar movimientos manuales, el procedimiento a seguir es el siguiente:
 
@@ -59,6 +59,14 @@ En la imagen se pueden apreciar los botones mencionados de configuración y de m
   <img src="https://github.com/user-attachments/assets/09cf001e-4487-4ff8-9df2-1c804d3650a8" alt="Teach pendant del Yaskawa Motoman MH6" width="300">
 </p>
 
+## Niveles de velocidad para Motoman MH6
+
+En el Motoman hay 8 velocidades a las que se puede acceder mediante las opciones de edición, cuyas características se resumen en la siguiente figura:
+
+<p align="center">
+   <img src="Figuras\Lab3\Velocidades.png" alt="Mariposa grande" width="600"><br> 
+
+Ahora bien, si se requiere cambiar el nivel de velocidad para el Motoman, primero se debe colocar la llave en la posición de "Teach", posteriormente se debe presionar el botón "MAIN MENU". Una vez la pantalla se encuentre en el menú, se selecciona “Robot”, luego se entra a “Override” y se emplean las teclas de dirección para seleccionar el valor de limitación. Por último se usan las teclas [+]/[-] para aumentar o disminuir la velocidad y se presiona "ENTER" para confirmar el nuevo valor. Para verificar el nivel de velocidad máximo se debe revisar la parte superior del Flex Pendant donde aparece el valor actualizado de override.
 
 ## Funcionalidades de RoboDK
 
