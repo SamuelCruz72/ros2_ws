@@ -1,0 +1,17 @@
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/install/phantomx_pincher/share/phantomx_pincher/launch/fake.launch.py
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/install/phantomx_pincher/share/phantomx_pincher/launch/gz.launch.py
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/install/phantomx_pincher/share/ament_index/resource_index/package_run_dependencies/phantomx_pincher
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/install/phantomx_pincher/share/ament_index/resource_index/parent_prefix_path/phantomx_pincher
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/install/phantomx_pincher/share/phantomx_pincher/environment/ament_prefix_path.sh
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/install/phantomx_pincher/share/phantomx_pincher/environment/ament_prefix_path.dsv
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/install/phantomx_pincher/share/phantomx_pincher/environment/path.sh
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/install/phantomx_pincher/share/phantomx_pincher/environment/path.dsv
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/install/phantomx_pincher/share/phantomx_pincher/local_setup.bash
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/install/phantomx_pincher/share/phantomx_pincher/local_setup.sh
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/install/phantomx_pincher/share/phantomx_pincher/local_setup.zsh
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/install/phantomx_pincher/share/phantomx_pincher/local_setup.dsv
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/install/phantomx_pincher/share/phantomx_pincher/package.dsv
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/install/phantomx_pincher/share/ament_index/resource_index/packages/phantomx_pincher
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/install/phantomx_pincher/share/phantomx_pincher/cmake/phantomx_pincherConfig.cmake
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/install/phantomx_pincher/share/phantomx_pincher/cmake/phantomx_pincherConfig-version.cmake
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/install/phantomx_pincher/share/phantomx_pincher/package.xml

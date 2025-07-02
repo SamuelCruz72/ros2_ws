@@ -1,0 +1,9 @@
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/build/phantomx_pincher_description/CMakeFiles/uninstall.dir
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/build/phantomx_pincher_description/CMakeFiles/phantomx_pincher_description_uninstall.dir
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/build/phantomx_pincher_description/CMakeFiles/test.dir
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/build/phantomx_pincher_description/CMakeFiles/edit_cache.dir
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/build/phantomx_pincher_description/CMakeFiles/rebuild_cache.dir
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/build/phantomx_pincher_description/CMakeFiles/list_install_components.dir
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/build/phantomx_pincher_description/CMakeFiles/install.dir
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/build/phantomx_pincher_description/CMakeFiles/install/local.dir
+/home/samuelcruz/Lab_Robotica/ros2_ws/phantom_ws/build/phantomx_pincher_description/CMakeFiles/install/strip.dir
